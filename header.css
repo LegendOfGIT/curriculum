@@ -2,8 +2,10 @@
 	background-color: lightblue;
 	color: #FFF;
 	max-height: 28vh;
+	position: fixed;
 	text-align: center;
 	width: 100%;
+	z-index: 2;
 }
 
 @media screen and (min-width: 568px) {
@@ -13,82 +15,88 @@
 	}
 }
 
-.header__addressContainer {
+.header__block {
+
 }
 
 @media screen and (min-width: 568px) {
-	.header__addressContainer {
-		left: 25vw;
-		position: fixed;
-		top: 25px;
+	.header__block {
+		display: inline-block;
 	}
 }
 
-.header__address {
-	display: inline-flex;
-	font-size: 0.8em;
-	position: relative;
-	top: -7px;
+.header__block--additionalInformation {
+
 }
 
 @media screen and (min-width: 568px) {
-	.header__address {
-		display: unset;
+	.header__block--additionalInformation {
+	}
+}
+
+.header__container {
+	background-repeat: no-repeat;
+	font-size: 0.7em;
+}
+
+@media screen and (min-width: 568px) {
+	.header__container {
+		left: 25vw;
+		text-align: center;
+		width: 55vw;
+	}
+}
+
+.header__container--address {
+	background-image: url("home.png");
+	background-position: left 18vw bottom;
+	background-size: 18px;
+}
+
+@media screen and (min-width: 568px) {
+	.header__container--address {
+		background-position: left 55px bottom;
 		font-size: 0.7em;
 	}
 }
 
-.header__addressIcon {
-	display: inline-flex;
-	width: 8vw;
+.header__container--email {
+	background-image: url("email-icon.png");
+	background-position: left 17vw bottom;
+	background-size: 11px;
 }
 
 @media screen and (min-width: 568px) {
-	.header__addressIcon {
-		width: 5vw;
+	.header__container--email {
+		background-position: left 54px bottom;
+		font-size: 0.7em;
+		left: 26.2vw;
 	}
 }
 
-.header__email {
-	display: inline-flex;
-	position: relative;
-	top: -5px;
-}
-
-.header__email a {
+.header__container--email a {
 	color: #FFF;
 }
 
-.header__emailContainer {
-	font-size: 0.8em;
-	padding-bottom: 15px;
+.header__container--github {
+	background-image: url("github-icon.png");
+	background-position: left 17vw bottom;
+	background-size: 11px;
 }
 
 @media screen and (min-width: 568px) {
-	.header__emailContainer {
-		font-size: 0.7em;
-		left: 26.2vw;
-		position: fixed;
-		top: 52px;
+	.header__container--github {
+		background-position: left 52px bottom;
 	}
 }
 
-.header__emailIcon {
-	display: inline-flex;
-	padding-right: 5px;
-	width: 5vw;
-}
-
-@media screen and (min-width: 568px) {
-	.header__emailIcon {
-		padding-right: 5px;
-		width: 3vw;
-	}
+.header__container--github a {
+	color: #FFF;
 }
 
 .header__firstName {
 	display: block;
-	font-size: 1.1em;
+	font-size: 0.8em;
 	text-transform: uppercase;
 }
 
@@ -98,48 +106,12 @@
 	}
 }
 
-.header__github {
-	display: inline-flex;
-	position: relative;
-	top: -5px;
-}
-
-.header__github a {
-	color: #FFF;
-}
-
-.header__githubContainer {
-	font-size: 1.5em;
-}
-
-@media screen and (min-width: 568px) {
-	.header__githubContainer {
-		font-size: 0.7em;
-		left: 26vw;
-		position: fixed;
-		top: 22vh;
-	}
-}
-
-.header__githubIcon {
-	display: inline-flex;
-	padding-right: 15px;
-	width: 3vw;
-}
-
-@media screen and (min-width: 568px) {
-	.header__githubIcon {
-		padding-right: 8px;
-	}
-}
-
-
 .header__image {
 	background-color: white;
 	border: 1px solid #BFBFBF;
 	box-shadow: 10px 10px 5px #aaaaaa;
 	padding: 10px 10px 20px 10px;
-	width: 30vw;
+	width: 25vw;
 }
 
 @media screen and (min-width: 568px) {
@@ -148,21 +120,27 @@
 		border: 1px solid #BFBFBF;
 		box-shadow: 10px 10px 5px #aaaaaa;
 		padding: 10px 10px 20px 10px;
-		position: fixed;
-		right: 110px;
-		top: 30px;
 		width: 10vw;
 	}
 }
 
 .header__imageContainer {
 	position: relative;
-	top: -10vh;
+	top: 2vh;
+}
+
+@media screen and (min-width: 568px) {
+	.header__imageContainer {
+		font-size: 0.9em;
+		position: absolute;
+		right: 5vw;
+		top: 10vh;
+	}
 }
 
 .header__lastName {
 	display: block;
-	font-size: 1.3em;
+	font-size: 1.0em;
 	text-transform: uppercase;
 }
 
@@ -174,7 +152,7 @@
 
 .header__name {
 	padding-bottom: 5px;
-	padding-top: 20px;
+	padding-top: 10px;
 }
 
 @media screen and (min-width: 568px) {
@@ -184,8 +162,8 @@
 }
 
 .header__profession {
-	font-size: 0.8em;
-	padding-bottom: 10px;
+	font-size: 0.6em;
+	padding-bottom: 5px;
 }
 
 @media screen and (min-width: 568px) {
