@@ -12,7 +12,7 @@
 
 @media screen and (min-width: 768px) {
 	.content {
-		left: 40vw;
+		left: 43vw;
 		max-width: 55vw;
 		min-width: 55vw;
 		text-align: initial;
@@ -40,4 +40,52 @@
 
 .content__blockEmployer {
 	font-size: 0.8em;
+}
+
+.content__blockEmployerAddress {
+	background: left;
+	background-image: url('place-icon.png');
+	background-repeat: no-repeat;
+	background-size: 16px;
+	display: initial;
+	font-size: 0.8em;
+	padding-left: 20px;
+}
+
+@media screen and (min-width: 768px) {
+	.content__blockEmployerAddress {
+		left: -20px;
+		position: relative;
+		top: 5px;
+	}
+}
+
+.content__blockEmployerDescription {
+	font-size: 0.9em;
+	padding-top: 10px;
+}
+
+@media screen and (min-width: 568px) {
+	.content__blockEmployerDescription {
+		display: inline-block;
+		width: 80vw;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.content__blockEmployerDescription {
+		padding-top: 15px;
+		width: unset;
+	}
+}
+
+.content__blockEmployerDescription--tasks {
+	font-size: 0.8em;
+	text-align: initial;
+}
+
+@media screen and (min-width: 768px) {
+	.content__blockEmployerDescription--tasks {
+		padding-left: 2vw;
+	}
 }

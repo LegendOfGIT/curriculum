@@ -7,23 +7,29 @@
 		<link rel="stylesheet" type="text/css" href="header.css"/>
 		<link rel="stylesheet" type="text/css" href="styles.css"/>
 	</head>
-	<body>
+	<body onload="loadLanguage();">
 		<script>
-			var translations = {
+			const translations = {
 				de: {
-					'at-arvato': 'bei arvato',
+					'arvato-scs-description': 'Das Unternehmen Arvato eCommerce Verwaltungsgesellschaft mbH wurde in die Arvato Supply Chain Solutions übernommen. <h3>Aufgaben</h3> <ul class="content__blockEmployerDescription--tasks"> <li>Neuentwicklung der Shop-Platform Phoenix</li> <li>Weiterentwicklung der Einzelproduktansicht des ESPRIT Online-Shop</li> </ul>',
+					'at-arvato-scs': 'bei Arvato Supply Chain Solutions',
 					'job-experiences': 'Berufserfahrung',
-					'personal-data': 'persönliche daten'
+					'personal-data': 'persönliche daten',
+					'software-engineer': 'Software engineer'
 				},
 				en: {
-					'at-arvato': 'at arvato',
+					'arvato-scs-description': 'The enterprise Arvato eCommerce Verwaltungsgesellschaft mbH was integrated into Arvato Supply Chain Solutions. <h3>Tasks</h3> <ul class="content__blockEmployerDescription--tasks"> <li>Development of the shop-platform Phoenix</li> <li>Development of the single product view of the ESPRIT online-shop</li> </ul>',
+					'at-arvato-scs': 'at Arvato Supply Chain Solutions',
 					'job-experiences': 'Job experience',
-					'personal-data': 'personal information'
+					'personal-data': 'personal information',
+					'software-engineer': 'Software engineer'
 				},
 				es: {
-					'at-arvato': 'en arvato',
+					'arvato-scs-description': 'La empresa Arvato eCommerce Verwaltungsgesellschaft mbH estaba integrado en la empresa Arvato Supply Chain Solutions. <h3>Tareas</h3> <ul class="content__blockEmployerDescription--tasks"> <li>El desarollo de la tienda online Phoenix</li> <li>El desarollo de la tienda online de ESPRIT online-shop</li> </ul>',
+					'at-arvato-scs': 'para Arvato Supply Chain Solutions',
 					'job-experiences': 'Experienca laboral',
-					'personal-data': 'informacion personal'
+					'personal-data': 'informacion personal',
+					'software-engineer': 'Ingeniero de software'
 				}
 			};
 
@@ -44,6 +50,20 @@
 						element.setAttribute('class', 'header__languageImage' + (language === currentLanguage ? ' header__languageImage--active' : ''));
 					}
 				}
+
+				if (sessionStorage) {
+					sessionStorage.setItem('language', language);
+				}
+			}
+
+			function loadLanguage() {
+				let language = 'de';
+
+				if (sessionStorage) {
+					language = sessionStorage.getItem('language') || 'de';
+				}
+
+				changeLanguage(language);
 			}
 		</script>
 
@@ -64,7 +84,7 @@
 					<div class="header__firstName">Marcel</div>
 					<div class="header__lastName">Marschner</div>
 				</div>
-				<div class="header__profession">
+				<div class="header__profession software-engineer">
 					Software Engineer
 				</div>
 			</div>
@@ -90,8 +110,19 @@
 		<div class="content">
 			<div class="content__block">
 				<div class="content__block content__blockTitle job-experiences">Berufserfahrung</div>
-				<div class="content__block content__blockJobPosition">Software Engineer</div>
-				<div class="content__block content__blockEmployer at-arvato">bei arvato</div>
+				<div class="content__block content__blockJobPosition software-engineer">Software Engineer</div>
+				<div class="content__block content__blockEmployer at-arvato-scs">bei Arvato Supply Chain Solutions</div>
+				<div class="content__block content__blockEmployerAddress">Wohlenbergstr. 3 | 30179 Hannover</div>
+				<div class="content__block content__blockEmployerDescription arvato-scs-description">
+					Das Unternehmen Arvato eCommerce Verwaltungsgesellschaft mbH wurde in
+					die Arvato Supply Chain Solutions übernommen.
+
+					<h3>Aufgaben</h3>
+					<ul class="content__blockEmployerDescription--tasks">
+						<li>Neuentwicklung der Shop-Platform Phoenix</li>
+						<li>Weiterentwicklung der Einzelproduktansicht des ESPRIT Online-Shop</li>
+					</ul>
+				</div>
 			</div>
 			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.

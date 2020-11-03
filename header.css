@@ -63,6 +63,7 @@
 
 @media screen and (min-width: 568px) {
 	.header__block--additionalInformation {
+		left: 30vw;
 		position: absolute;
 		top: 5vh;
 	}
@@ -72,16 +73,17 @@
 	.header__block--additionalInformation {
 		display: block;
 		padding: unset;
-		padding-left: 5vw;
+		padding-left: 3vw;
 		padding-top: 16vh;
+		position: initial;
 		top: 12vh;
 	}
 }
 
 @media screen and (min-width: 1024px) {
 	.header__block--additionalInformation {
-		padding-left: 4vw;
-		padding-top: 30vh;
+		padding-left: 2vw;
+		padding-top: 25vh;
 	}
 }
 
@@ -99,14 +101,16 @@
 
 .header__container {
 	background-repeat: no-repeat;
+	display: inline-block;
 	font-size: 0.7em;
+	padding-left: 20px;
+	padding-top: 5px;
 }
 
 @media screen and (min-width: 568px) {
 	.header__container {
+		display: inherit;
 		left: 25vw;
-		text-align: center;
-		width: 55vw;
 	}
 }
 
@@ -122,38 +126,19 @@
 
 .header__container--address {
 	background-image: url("home.png");
-	background-position: left 18vw bottom;
-	background-size: 18px;
-}
-
-@media screen and (min-width: 568px) {
-	.header__container--address {
-		background-position: left 55px bottom;
-	}
-}
-
-@media screen and (min-width: 768px) {
-	.header__container--address {
-		background-position: left bottom;
-	}
+	background-position: left;
+	background-size: 15px;
 }
 
 .header__container--email {
 	background-image: url("email-icon.png");
-	background-position: left 17vw bottom;
-	background-size: 11px;
+	background-position: left;
+	background-size: 14px;
 }
 
 @media screen and (min-width: 568px) {
 	.header__container--email {
-		background-position: left 54px bottom;
 		left: 26.2vw;
-	}
-}
-
-@media screen and (min-width: 768px) {
-	.header__container--email {
-		background-position: left bottom;
 	}
 }
 
@@ -163,20 +148,8 @@
 
 .header__container--github {
 	background-image: url("github-icon.png");
-	background-position: left 17vw bottom;
-	background-size: 11px;
-}
-
-@media screen and (min-width: 568px) {
-	.header__container--github {
-		background-position: left 52px bottom;
-	}
-}
-
-@media screen and (min-width: 768px) {
-	.header__container--github {
-		background-position: left bottom;
-	}
+	background-position: left;
+	background-size: 13px;
 }
 
 .header__container--github a {
@@ -283,6 +256,7 @@
 }
 
 .header__languageImage {
+	border: 1px solid lightblue;
 	border-radius: 50%;
 	max-width: 40px;
 	width: 100%;
