@@ -8,3 +8,20 @@
 		top: 33vh;
 	}
 }
+
+@media screen and (min-width: 768px) {
+	.content {
+		left: 40vw;
+		max-width: 55vw;
+		min-width: 55vw;
+		top: 2vh;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.content {
+		left: 32vw;
+		max-width: 64vw;
+		min-width: 64vw;
+	}
+}
