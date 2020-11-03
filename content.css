@@ -1,6 +1,7 @@
 .content {
 	position: absolute;
-	top: 30vh;
+	text-align: center;
+	top: 45vh;
 }
 
 @media screen and (min-width: 568px) {
@@ -14,6 +15,7 @@
 		left: 40vw;
 		max-width: 55vw;
 		min-width: 55vw;
+		text-align: initial;
 		top: 2vh;
 	}
 }
@@ -24,4 +26,18 @@
 		max-width: 64vw;
 		min-width: 64vw;
 	}
+}
+
+.content__blockTitle {
+	color: lightblue;
+	font-size: 1.5em;
+	padding-bottom: 1vh;
+}
+
+.content__blockJobPosition {
+	font-size: 1.3em;
+}
+
+.content__blockEmployer {
+	font-size: 0.8em;
 }

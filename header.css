@@ -220,6 +220,7 @@
 	background-color: white;
 	border: 1px solid #BFBFBF;
 	box-shadow: 10px 10px 5px #aaaaaa;
+	max-width: 150px;
 	padding: 10px 10px 20px 10px;
 	width: 25vw;
 }
@@ -283,6 +284,7 @@
 
 .header__languageImage {
 	border-radius: 50%;
+	max-width: 40px;
 	width: 100%;
 }
 

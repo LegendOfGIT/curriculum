@@ -11,12 +11,18 @@
 		<script>
 			var translations = {
 				de: {
+					'at-arvato': 'bei arvato',
+					'job-experiences': 'Berufserfahrung',
 					'personal-data': 'persönliche daten'
 				},
 				en: {
+					'at-arvato': 'at arvato',
+					'job-experiences': 'Job experience',
 					'personal-data': 'personal information'
 				},
 				es: {
+					'at-arvato': 'en arvato',
+					'job-experiences': 'Experienca laboral',
 					'personal-data': 'informacion personal'
 				}
 			};
@@ -26,11 +32,10 @@
 
 				const translationsForLanguage = translations[language];
 				for (const [key, value] of Object.entries(translationsForLanguage)) {
-					let element = document.getElementById(key);
-					if (element) {
+					let elements = document.getElementsByClassName(key);
+					for (const element of elements) {
 						element.innerHTML = value;
 					}
-
 				}
 
 				for (const currentLanguage of ['de', 'en', 'es']) {
@@ -64,7 +69,7 @@
 				</div>
 			</div>
 			<div class="header__block header__block--additionalInformation">
-				<div id="personal-data" class="header__container header__container--title">
+				<div class="header__container header__container--title personal-data">
 					Persönliche Daten
 				</div>
 				<div class="header__container header__container--address">
@@ -83,6 +88,11 @@
 			</div>
 		</div>
 		<div class="content">
+			<div class="content__block">
+				<div class="content__block content__blockTitle job-experiences">Berufserfahrung</div>
+				<div class="content__block content__blockJobPosition">Software Engineer</div>
+				<div class="content__block content__blockEmployer at-arvato">bei arvato</div>
+			</div>
 			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
