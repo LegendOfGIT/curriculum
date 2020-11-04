@@ -44,7 +44,7 @@
 
 .content__blockEmployerAddress {
 	background: left;
-	background-image: url('place-icon.png');
+	background-image: url('images/place-icon.png');
 	background-repeat: no-repeat;
 	background-size: 16px;
 	display: initial;
@@ -76,6 +76,28 @@
 	.content__blockEmployerDescription {
 		padding-top: 15px;
 		width: unset;
+	}
+}
+
+.content__blockEmployerDescription--single-skill {
+	display: inline-block;
+	font-size: 0.7em;
+	width: 30vw;
+	text-align: right;
+	padding-right: 10px;
+}
+
+@media screen and (min-width: 568px) {
+	.content__blockEmployerDescription--single-skill {
+		width: 24vw;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.content__blockEmployerDescription--single-skill {
+		padding-bottom: 8px;
+		text-align: initial;
+		width: 14vw;
 	}
 }
 

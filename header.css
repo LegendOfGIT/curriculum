@@ -125,13 +125,13 @@
 }
 
 .header__container--address {
-	background-image: url("home.png");
+	background-image: url("images/home.png");
 	background-position: left;
 	background-size: 15px;
 }
 
 .header__container--email {
-	background-image: url("email-icon.png");
+	background-image: url("images/email-icon.png");
 	background-position: left;
 	background-size: 14px;
 }
@@ -147,7 +147,7 @@
 }
 
 .header__container--github {
-	background-image: url("github-icon.png");
+	background-image: url("images/github-icon.png");
 	background-position: left;
 	background-size: 13px;
 }
