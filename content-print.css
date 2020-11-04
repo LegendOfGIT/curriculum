@@ -1,31 +1,5 @@
 .content {
-	position: absolute;
 	text-align: center;
-	top: 47vh;
-}
-
-@media screen and (min-width: 568px) {
-	.content {
-		top: 33vh;
-	}
-}
-
-@media screen and (min-width: 768px) {
-	.content {
-		left: 43vw;
-		max-width: 55vw;
-		min-width: 55vw;
-		text-align: initial;
-		top: 2vh;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	.content {
-		left: 32vw;
-		max-width: 64vw;
-		min-width: 64vw;
-	}
 }
 
 .content__block {

@@ -1,32 +1,34 @@
 <html>
 	<head>
-		<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 		<title>Curriculum Vitae | Marcel Marschner</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="content.css"/>
-		<link rel="stylesheet" type="text/css" href="header.css"/>
+		<link rel="stylesheet" type="text/css" href="content.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="content-print.css" media="print"/>
+		<link rel="stylesheet" type="text/css" href="header.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="header-print.css" media="print"/>
 		<link rel="stylesheet" type="text/css" href="styles.css"/>
 	</head>
-	<body onload="loadLanguage();">
+	<body onload="">
 		<script>
 			const translations = {
 				de: {
-					'arvato-scs-description': 'Das Unternehmen Arvato eCommerce Verwaltungsgesellschaft mbH wurde in die Arvato Supply Chain Solutions übernommen. <h3>Aufgaben</h3> <ul class="content__blockEmployerDescription--tasks"> <li>Neuentwicklung der Shop-Platform Phoenix</li> <li>Weiterentwicklung der Einzelproduktansicht des ESPRIT Online-Shop</li> <li>Instandhaltung und Betrieb des ESPRIT Online-Shop</li> </ul> <h3>Neue Skills</h3> <div><div class="content__blockEmployerDescription--single-skill">Kubernetes</div><progress max="100" value="70"></progress></div> <div><div class="content__blockEmployerDescription--single-skill">React</div><progress max="100" value="90"></progress></div> <div><div class="content__blockEmployerDescription--single-skill">RWD-Layouts</div><progress max="100" value="75"></progress></div> <div><div class="content__blockEmployerDescription--single-skill">Elastic-Search</div><progress max="100" value="30"></progress></div> <div><div class="content__blockEmployerDescription--single-skill">Rabbit-MQ</div><progress max="100" value="40"></progress></div>',
+					'arvato-scs-description': 'Das Unternehmen Arvato eCommerce Verwaltungsgesellschaft mbH wurde in die Arvato Supply Chain Solutions übernommen. <h3>Aufgaben</h3> <ul class="content__blockEmployerDescription--tasks"> <li>Neuentwicklung der Shop-Platform Phoenix</li> <li>Weiterentwicklung der Einzelproduktansicht des ESPRIT Online-Shop</li> <li>Instandhaltung und Betrieb des ESPRIT Online-Shop</li> </ul> <h3>Neue Skills</h3> <div class="skill"><div class="skill__singleSkill">Kubernetes</div><div class="progressbar progressbar--70"><div></div></div></div><div class="skill"><div class="skill__singleSkill">React</div><div class="progressbar progressbar--90"><div></div></div></div><div class="skill"><div class="skill__singleSkill">RWD-Layouts</div><div class="progressbar progressbar--75"><div></div></div></div><div class="skill"><div class="skill__singleSkill">Elastic-Search</div><div class="progressbar progressbar--30"><div></div></div></div><div class="skill"><div class="skill__singleSkill">Rabbit-MQ</div><div class="progressbar progressbar--40"><div></div></div></div>',
 					'at-arvato-scs': 'bei Arvato Supply Chain Solutions',
 					'job-experiences': 'Berufserfahrung',
 					'personal-data': 'persönliche daten',
-					'software-engineer': 'Software engineer'
+					'software-engineer': 'Software-Engineer'
 				},
 				en: {
-					'arvato-scs-description': 'The enterprise Arvato eCommerce Verwaltungsgesellschaft mbH was integrated into Arvato Supply Chain Solutions. <h3>Tasks</h3> <ul class="content__blockEmployerDescription--tasks"> <li>Development of the shop-platform Phoenix</li> <li>Development of the single product view of the ESPRIT online-shop</li> <li>Maintainance and operation of the ESPRIT online-shop</li> </ul> <h3>New Skills</h3> <div><div class="content__blockEmployerDescription--single-skill">Kubernetes</div><progress max="100" value="70"></progress></div> <div><div class="content__blockEmployerDescription--single-skill">React</div><progress max="100" value="90"></progress></div> <div><div class="content__blockEmployerDescription--single-skill">RWD-Layouts</div><progress max="100" value="75"></progress></div> <div><div class="content__blockEmployerDescription--single-skill">Elastic-Search</div><progress max="100" value="30"></progress></div> <div><div class="content__blockEmployerDescription--single-skill">Rabbit-MQ</div><progress max="100" value="40"></progress></div>',
+					'arvato-scs-description': 'The enterprise Arvato eCommerce Verwaltungsgesellschaft mbH was integrated into Arvato Supply Chain Solutions. <h3>Tasks</h3> <ul class="content__blockEmployerDescription--tasks"> <li>Development of the shop-platform Phoenix</li> <li>Development of the single product view of the ESPRIT online-shop</li> <li>Maintainance and operation of the ESPRIT online-shop</li> </ul> <h3>New Skills</h3> <div class="skill"><div class="skill__singleSkill">Kubernetes</div><div class="progressbar progressbar--70"><div></div></div></div><div class="skill"><div class="skill__singleSkill">React</div><div class="progressbar progressbar--90"><div></div></div></div><div class="skill"><div class="skill__singleSkill">RWD-Layouts</div><div class="progressbar progressbar--75"><div></div></div></div><div class="skill"><div class="skill__singleSkill">Elastic-Search</div><div class="progressbar progressbar--30"><div></div></div></div><div class="skill"><div class="skill__singleSkill">Rabbit-MQ</div><div class="progressbar progressbar--40"><div></div></div></div>',
 					'at-arvato-scs': 'at Arvato Supply Chain Solutions',
 					'job-experiences': 'Job experience',
 					'personal-data': 'personal information',
-					'software-engineer': 'Software engineer'
+					'software-engineer': 'Software-Engineer'
 				},
 				es: {
-					'arvato-scs-description': 'La empresa Arvato eCommerce Verwaltungsgesellschaft mbH estaba integrado en la empresa Arvato Supply Chain Solutions. <h3>Tareas</h3> <ul class="content__blockEmployerDescription--tasks"> <li>El desarollo de la tienda online Phoenix</li> <li>El desarollo de la tienda online de ESPRIT</li> <li>El mantenimiento de la tienda online de ESPRIT</li> </ul> <h3>Nuevos cualidades</h3> <div><div class="content__blockEmployerDescription--single-skill">Kubernetes</div><progress max="100" value="70"></progress></div> <div><div class="content__blockEmployerDescription--single-skill">React</div><progress max="100" value="90"></progress></div> <div><div class="content__blockEmployerDescription--single-skill">Layouts por RWD</div><progress max="100" value="75"></progress></div> <div><div class="content__blockEmployerDescription--single-skill">Elastic-Search</div><progress max="100" value="30"></progress></div> <div><div class="content__blockEmployerDescription--single-skill">Rabbit-MQ</div><progress max="100" value="40"></progress></div>',
+					'arvato-scs-description': 'La empresa Arvato eCommerce Verwaltungsgesellschaft mbH estaba integrado en la empresa Arvato Supply Chain Solutions. <h3>Tareas</h3> <ul class="content__blockEmployerDescription--tasks"> <li>El desarollo de la tienda online Phoenix</li> <li>El desarollo de la tienda online de ESPRIT</li> <li>El mantenimiento de la tienda online de ESPRIT</li> </ul> <h3>Nuevos cualidades</h3> <div class="skill"><div class="skill__singleSkill">Kubernetes</div><div class="progressbar progressbar--70"><div></div></div></div><div class="skill"><div class="skill__singleSkill">React</div><div class="progressbar progressbar--90"><div></div></div></div><div class="skill"><div class="skill__singleSkill">Diseño de RWD</div><div class="progressbar progressbar--75"><div></div></div></div><div class="skill"><div class="skill__singleSkill">Elastic-Search</div><div class="progressbar progressbar--30"><div></div></div></div><div class="skill"><div class="skill__singleSkill">Rabbit-MQ</div><div class="progressbar progressbar--40"><div></div></div></div>',
 					'at-arvato-scs': 'para Arvato Supply Chain Solutions',
 					'job-experiences': 'Experienca laboral',
 					'personal-data': 'informacion personal',
@@ -86,7 +88,7 @@
 					<div class="header__lastName">Marschner</div>
 				</div>
 				<div class="header__profession software-engineer">
-					Software Engineer
+					Software-Engineer
 				</div>
 			</div>
 			<div class="header__block header__block--additionalInformation">
@@ -110,27 +112,52 @@
 		</div>
 		<div class="content">
 			<div class="content__block">
+				<div class="content__lastUpdate">Letztes Update: 04.11.2020</div>
 				<div class="content__block content__blockTitle job-experiences">Berufserfahrung</div>
-				<div class="content__block content__blockJobPosition software-engineer">Software Engineer</div>
-				<div class="content__block content__blockEmployer at-arvato-scs">bei Arvato Supply Chain Solutions</div>
-				<div class="content__block content__blockEmployerAddress">Wohlenbergstr. 3 | 30179 Hannover</div>
-				<div class="content__block content__blockEmployerDescription arvato-scs-description">
-					Das Unternehmen Arvato eCommerce Verwaltungsgesellschaft mbH wurde in
-					die Arvato Supply Chain Solutions übernommen.
+				<div class="jobExperience">
+					<div class="content__block content__blockJobPosition software-engineer">Software-Engineer</div>
+					<div class="content__block content__blockEmployer at-arvato-scs">bei Arvato Supply Chain Solutions</div>
+					<div class="content__block content__blockEmployerAddress">Wohlenbergstr. 3 | 30179 Hannover</div>
+					<div class="content__block content__blockEmployerDescription arvato-scs-description">
+						Das Unternehmen Arvato eCommerce Verwaltungsgesellschaft mbH wurde in
+						die Arvato Supply Chain Solutions übernommen.
 
-					<h3>Aufgaben</h3>
-					<ul class="content__blockEmployerDescription--tasks">
-						<li>Neuentwicklung der Shop-Platform Phoenix</li>
-						<li>Weiterentwicklung der Einzelproduktansicht des ESPRIT Online-Shop</li>
-						<li>Instandhaltung und Betrieb des ESPRIT Online-Shop</li>
-					</ul>
+						<h3>Aufgaben</h3>
+						<ul class="content__blockEmployerDescription--tasks">
+							<li>Neuentwicklung der Shop-Platform Phoenix</li>
+							<li>Weiterentwicklung der Einzelproduktansicht des ESPRIT Online-Shop</li>
+							<li>Instandhaltung und Betrieb des ESPRIT Online-Shop</li>
+						</ul>
 
-					<h3>Neue Skills</h3>
-					<div><div class="content__blockEmployerDescription--single-skill">Kubernetes</div><progress max="100" value="70"></progress></div>
-					<div><div class="content__blockEmployerDescription--single-skill">React</div><progress max="100" value="90"></progress></div>
-					<div><div class="content__blockEmployerDescription--single-skill">RWD-Layouts</div><progress max="100" value="75"></progress></div>
-					<div><div class="content__blockEmployerDescription--single-skill">Elastic-Search</div><progress max="100" value="30"></progress></div>
-					<div><div class="content__blockEmployerDescription--single-skill">Rabbit-MQ</div><progress max="100" value="40"></progress></div>
+						<h3>Neue Skills</h3>
+						<div class="skill"><div class="skill__singleSkill">Kubernetes</div><div class="progressbar progressbar--70"><div></div></div></div>
+						<div class="skill"><div class="skill__singleSkill">React</div><div class="progressbar progressbar--90"><div></div></div></div>
+						<div class="skill"><div class="skill__singleSkill">RWD-Layouts</div><div class="progressbar progressbar--75"><div></div></div></div>
+						<div class="skill"><div class="skill__singleSkill">Elastic-Search</div><div class="progressbar progressbar--30"><div></div></div></div>
+						<div class="skill"><div class="skill__singleSkill">Rabbit-MQ</div><div class="progressbar progressbar--40"><div></div></div></div>
+					</div>
+				</div>
+
+				<div class="jobExperience">
+					<div class="content__block content__blockJobPosition software-engineer">Software-Engineer</div>
+					<div class="content__block content__blockEmployer at-arvato-scs">bei Arvato eCommerce Verwaltungsgesellschaft mbH</div>
+					<div class="content__block content__blockEmployerAddress">Wohlenbergstr. 4d | 30179 Hannover</div>
+					<div class="content__block content__blockEmployerDescription">
+						Das Unternehmen Arvato eCommerce Verwaltungsgesellschaft mbH ist mit ca. 60 Mitarbeitern mit
+						der Weiterentwicklung und Instandhaltung des ESPRIT Online-Shop beschäftigt.
+
+						<h3>Aufgaben</h3>
+						<ul class="content__blockEmployerDescription--tasks">
+							<li>Einarbeitung in den ESPRIT Online-Shop</li>
+							<li>Weiterentwicklung der Kundenverwaltung des ESPRIT Online-Shop</li>
+						</ul>
+
+						<h3>Neue Skills</h3>
+						<div class="skill"><div class="skill__singleSkill">PHP</div><div class="progressbar progressbar--90"><div></div></div></div>
+						<div class="skill"><div class="skill__singleSkill">.NET</div><div class="progressbar progressbar--75"><div></div></div></div>
+						<div class="skill"><div class="skill__singleSkill">RWD-Layouts</div><div class="progressbar progressbar--40"><div></div></div></div>
+						<div class="skill"><div class="skill__singleSkill">MSSQL</div><div class="progressbar progressbar--55"><div></div></div></div>
+					</div>
 				</div>
 			</div>
 			<div>&nbsp;</div>

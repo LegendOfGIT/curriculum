@@ -88,28 +88,7 @@
 }
 
 .header__block--languages {
-	position: fixed;
-	right: 10px;
-	top: 10px;
-}
-
-@media screen and (min-width: 568px) {
-	.header__block--languages {
-		display: grid;
-		left: 73vw;
-		position: absolute;
-		top: 5vh;
-	}
-}
-
-@media screen and (min-width: 768px) {
-	.header__block--languages {
-		display: initial;
-		left: inherit;
-		padding-top: 1vh;
-		right: inherit;
-		top: 10px;
-	}
+	display: none;
 }
 
 .header__container {
