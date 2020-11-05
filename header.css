@@ -87,6 +87,13 @@
 	}
 }
 
+@media screen and (min-width: 1920px) {
+	.header__block--additionalInformation {
+		padding-left: 3.3vw;
+	}
+}
+
+
 .header__block--languages {
 	position: fixed;
 	right: 10px;
@@ -139,6 +146,12 @@
 	}
 }
 
+@media screen and (min-width: 1920px) {
+	.header__container {
+		font-size: 0.9em;
+	}
+}
+
 .header__container--address {
 	background-image: url("images/home.png");
 	background-position: left;
@@ -186,6 +199,12 @@
 	}
 }
 
+@media screen and (min-width: 1920px) {
+	.header__container--title {
+		font-size: 0.9em;
+	}
+}
+
 .header__firstName {
 	display: block;
 	font-size: 0.8em;
@@ -201,6 +220,12 @@
 @media screen and (min-width: 768px) {
 	.header__firstName {
 		font-size: 1.2em;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.header__firstName {
+		font-size: 1.7em;
 	}
 }
 
@@ -283,6 +308,12 @@
 	}
 }
 
+@media screen and (min-width: 1920px) {
+	.header__language {
+		width: 50px;
+	}
+}
+
 .header__languageImage {
 	border: 1px solid lightblue;
 	border-radius: 50%;
@@ -309,6 +340,12 @@
 @media screen and (min-width: 768px) {
 	.header__lastName {
 		font-size: 1.5em;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.header__lastName {
+		font-size: 2.0em;
 	}
 }
 
@@ -352,5 +389,11 @@
 	.header__profession {
 		font-size: 0.8em;
 		padding-left: unset;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.header__profession {
+		font-size: 1.0em;
 	}
 }
