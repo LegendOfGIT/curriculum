@@ -109,7 +109,6 @@
 
 @media screen and (min-width: 568px) {
 	.content__lastUpdate {
-		text-align: right;
 		padding-right: 10px;
 		padding-top: 10px;
 	}
@@ -148,6 +147,13 @@
 	width: 10em;
 }
 
+.progressbar--15>div {
+	width: 15%;
+}
+.progressbar--25>div {
+	width: 25%;
+}
+
 .progressbar--30>div {
 	width: 30%;
 }
@@ -156,8 +162,16 @@
 	width: 40%;
 }
 
+.progressbar--50>div {
+	width: 50%;
+}
+
 .progressbar--55>div {
 	width: 55%;
+}
+
+.progressbar--60>div {
+	width: 60%;
 }
 
 .progressbar--70>div {
