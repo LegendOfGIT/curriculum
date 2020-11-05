@@ -231,8 +231,8 @@
 
 .header__image {
 	background-color: white;
-	border: 1px solid #BFBFBF;
-	box-shadow: 10px 10px 5px #aaaaaa;
+	border: 1px solid #B0B0B0;
+	box-shadow: 0 2px 6px 4px #ddd;
 	max-width: 150px;
 	padding: 10px 10px 20px 10px;
 	width: 25vw;
@@ -240,10 +240,6 @@
 
 @media screen and (min-width: 568px) {
 	.header__image {
-		background-color: white;
-		border: 1px solid #BFBFBF;
-		box-shadow: 10px 10px 5px #aaaaaa;
-		padding: 10px 10px 20px 10px;
 		width: 10vw;
 	}
 }
