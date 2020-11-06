@@ -1,29 +1,74 @@
 <html>
 	<head>
-		<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<title>Curriculum Vitae | Marcel Marschner</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="content.css"/>
-		<link rel="stylesheet" type="text/css" href="header.css"/>
+		<link rel="stylesheet" type="text/css" href="content.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="content-print.css" media="print"/>
+		<link rel="stylesheet" type="text/css" href="header.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="header-print.css" media="print"/>
 		<link rel="stylesheet" type="text/css" href="styles.css"/>
 	</head>
-	<body>
+	<body onload="loadLanguage();">
 		<script>
-			var translations = {
+			const translations = {
 				de: {
-					'at-arvato': 'bei arvato',
-					'job-experiences': 'Berufserfahrung',
-					'personal-data': 'persönliche daten'
+					'translation-arvato-ecommerce-description': 'Das Unternehmen Arvato eCommerce Verwaltungsgesellschaft mbH ist mit ca. 60 Mitarbeitern mit der Weiterentwicklung und Instandhaltung des ESPRIT Online-Shop beschäftigt.',
+					'translation-arvato-ecommerce-tasks': '<li>Einarbeitung in den ESPRIT Online-Shop</li><li>Weiterentwicklung der Kundenverwaltung des ESPRIT Online-Shop</li>',
+					'translation-arvato-scs-description': 'Das Unternehmen Arvato eCommerce Verwaltungsgesellschaft mbH wurde in die Arvato Supply Chain Solutions übernommen.',
+					'translation-arvato-scs-tasks': '<li>Neuentwicklung der Shop-Platform Phoenix</li> <li>Weiterentwicklung der Einzelproduktansicht des ESPRIT Online-Shop</li> <li>Instandhaltung und Betrieb des ESPRIT Online-Shop</li>',
+					'translation-at-arvato-scs': 'bei Arvato Supply Chain Solutions',
+					'translation-at-franke-bornberg': 'bei Franke und Bornberg Research GmbH',
+					'translation-franke-bornberg-description': 'Die Franke und Bornberg Research GmbH ist für die Entwicklung und den Betrieb von Versicherungsvergleichs-Software Produkten für Versicherungsvermittler verantwortlich.',
+					'translation-franke-bornberg-tasks': '<li>Entwicklung der Vergleichssoftware fb-xpert und fb-data</li>',
+					'translation-franke-bornberg-tasks-sd': '<li>Entwicklung der Vergleichssoftware fb-xpert und fb-data</li><li>Einarbeitung in und Etablierung von neuen Technologien</li><li>Förderung von Mitarbeiter Fähigkeiten</li>',
+					'translation-job-experiences': 'Berufserfahrung',
+					'translation-last-update': 'Letztes Update',
+					'translation-new-skills': 'Neue Skills',
+					'translation-personal-data': 'persönliche daten',
+					'translation-rwd-layouts': 'RWD Layouts',
+					'translation-senior-software-engineer': 'Senior Software-Engineer',
+					'translation-software-engineer': 'Software-Engineer',
+					'translation-tasks': 'Aufgaben'
 				},
 				en: {
-					'at-arvato': 'at arvato',
-					'job-experiences': 'Job experience',
-					'personal-data': 'personal information'
+					'translation-arvato-ecommerce-description': 'The enterprise Arvato eCommerce Verwaltungsgesellschaft mbH provides ESPRIT with further development and maintenance of the online-shop. There are approximately 60 employees for this tasks.',
+					'translation-arvato-ecommerce-tasks': '<li>Introduction of the ESPRIT Online-Shop</li><li>Development of the customer account component of ESPRIT Online-Shop</li>',
+					'translation-arvato-scs-description': 'The enterprise Arvato eCommerce Verwaltungsgesellschaft mbH was integrated into Arvato Supply Chain Solutions.',
+					'translation-arvato-scs-tasks': '<li>Development of the shop-platform Phoenix</li> <li>Development of the single product view of the ESPRIT online-shop</li> <li>Maintainance and operation of the ESPRIT online-shop</li>',
+					'translation-at-arvato-scs': 'at Arvato Supply Chain Solutions',
+					'translation-at-franke-bornberg': 'at Franke und Bornberg Research GmbH',
+					'translation-franke-bornberg-description': 'Franke and Bornberg Research GmbH is responsible for the development and maintenance of insurance comparison software for insurancy agents.',
+					'translation-franke-bornberg-tasks': '<li>Development of the comparision software fb-xpert and fb-data</li>',
+					'translation-franke-bornberg-tasks-sd': '<li>Development of the comparision software fb-xpert and fb-data</li><li>Introduction of new technologies</li><li>Improvement of co-worker skills</li>',
+					'translation-job-experiences': 'Job experience',
+					'translation-last-update': 'Last Update',
+					'translation-new-skills': 'New Skills',
+					'translation-personal-data': 'personal information',
+					'translation-rwd-layouts': 'RWD Layouts',
+					'translation-senior-software-engineer': 'Senior Software-Engineer',
+					'translation-software-engineer': 'Software-Engineer',
+					'translation-tasks': 'Tasks'
 				},
 				es: {
-					'at-arvato': 'en arvato',
-					'job-experiences': 'Experienca laboral',
-					'personal-data': 'informacion personal'
+					'translation-arvato-ecommerce-description': 'La empresa Arvato eCommerce Verwaltungsgesellschaft mbH tiene alrededor de 60 empleados que trabajan en el desarrollo y mantenimiento de la tienda en línea ESPRIT.',
+					'translation-arvato-ecommerce-tasks': '<li>Familiarización con la tienda online de ESPRIT</li><li>El desarrollo de la gestión de clientes de la tienda online ESPRIT</li>',
+					'translation-arvato-scs-description': 'La empresa Arvato eCommerce Verwaltungsgesellschaft mbH estaba integrado en la empresa Arvato Supply Chain Solutions.',
+					'translation-arvato-scs-tasks': '<li>El desarollo de la tienda online Phoenix</li> <li>El desarollo de la tienda online de ESPRIT</li> <li>El mantenimiento de la tienda online de ESPRIT</li>',
+					'translation-at-arvato-scs': 'para Arvato Supply Chain Solutions',
+					'translation-at-franke-bornberg': 'para Franke und Bornberg Research GmbH',
+					'translation-franke-bornberg-description': 'Franke y Bornberg Research GmbH es responsable del desarrollo y funcionamiento de productos de software de comparación de seguros para corredores de seguros.',
+					'translation-franke-bornberg-tasks': '<li>El desarrollo de la software de comparision fb-xpert y fb-data</li>',
+					'translation-franke-bornberg-tasks-sd': '<li>El desarrollo de la software de comparision fb-xpert y fb-data</li><li>Familiarización y establecimiento de nuevas tecnologías.</li><li>Mejora de las cualidades de los compañeros de trabajo</li>',
+					'translation-job-experiences': 'Experienca laboral',
+					'translation-last-update': 'La última actualización',
+					'translation-new-skills': 'Nuevos cualidades',
+					'translation-personal-data': 'informacion personal',
+					'translation-rwd-layouts': 'Diseño de RWD',
+					'translation-senior-software-engineer': 'Ingeniero de software superior',
+					'translation-software-engineer': 'Ingeniero de software',
+					'translation-tasks': 'Tareas'
 				}
 			};
 
@@ -44,19 +89,33 @@
 						element.setAttribute('class', 'header__languageImage' + (language === currentLanguage ? ' header__languageImage--active' : ''));
 					}
 				}
+
+				if (sessionStorage) {
+					sessionStorage.setItem('language', language);
+				}
+			}
+
+			function loadLanguage() {
+				let language = 'de';
+
+				if (sessionStorage) {
+					language = sessionStorage.getItem('language') || 'de';
+				}
+
+				changeLanguage(language);
 			}
 		</script>
 
 		<div class="header">
 			<div class="header__block header__block--languages">
 				<div class="header__language">
-					<img id="language-de" class="header__languageImage header__languageImage--active" src="flag-german.png" onClick="changeLanguage('de');"/>
+					<img id="language-de" class="header__languageImage header__languageImage--active" src="images/flag-german.png" onClick="changeLanguage('de');"/>
 				</div>
 				<div class="header__language">
-					<img id="language-en" class="header__languageImage" src="flag-uk.jpg" onClick="changeLanguage('en');"/>
+					<img id="language-en" class="header__languageImage" src="images/flag-uk.jpg" onClick="changeLanguage('en');"/>
 				</div>
 				<div class="header__language">
-					<img id="language-es" class="header__languageImage" src="flag-spain.gif" onClick="changeLanguage('es');"/>
+					<img id="language-es" class="header__languageImage" src="images/flag-spain.gif" onClick="changeLanguage('es');"/>
 				</div>
 			</div>
 			<div class="header__block">
@@ -64,14 +123,10 @@
 					<div class="header__firstName">Marcel</div>
 					<div class="header__lastName">Marschner</div>
 				</div>
-				<div class="header__profession">
-					Software Engineer
-				</div>
+				<div class="header__profession translation-software-engineer"></div>
 			</div>
 			<div class="header__block header__block--additionalInformation">
-				<div class="header__container header__container--title personal-data">
-					Persönliche Daten
-				</div>
+				<div class="header__container header__container--title translation-personal-data"></div>
 				<div class="header__container header__container--address">
 					Bachstr. 8 31303 Ehlershausen
 				</div>
@@ -84,27 +139,94 @@
 			</div>
 
 			<div class="header__imageContainer">
-				<img class="header__image" src="marcel-marschner.jpg"/>
+				<img class="header__image" src="images/marcel-marschner.jpg"/>
 			</div>
 		</div>
 		<div class="content">
 			<div class="content__block">
-				<div class="content__block content__blockTitle job-experiences">Berufserfahrung</div>
-				<div class="content__block content__blockJobPosition">Software Engineer</div>
-				<div class="content__block content__blockEmployer at-arvato">bei arvato</div>
+				<div class="content__lastUpdate"><span class="translation-last-update"></span>: 05.11.2020</div>
+				<div class="content__block content__blockTitle translation-job-experiences"></div>
+				<div class="jobExperience">
+					<div class="content__block content__blockJobPosition translation-software-engineer"></div>
+					<div class="content__block content__blockEmployer translation-at-arvato-scs"></div>
+					<div class="content__block content__blockEmployerAddress">Wohlenbergstr. 3 | 30179 Hannover</div>
+					<div class="content__block content__blockEmployerDescription">
+						<div class="content__blockEmployerDescription--text translation-arvato-scs-description"></div>
+
+						<h3 class="translation-tasks"></h3>
+						<ul class="content__blockEmployerDescription--tasks translation-arvato-scs-tasks"></ul>
+
+						<h3 class="translation-new-skills"></h3>
+						<div class="skill"><div class="skill__singleSkill">Kubernetes</div><div class="progressbar progressbar--70"><div></div></div></div>
+						<div class="skill"><div class="skill__singleSkill">React</div><div class="progressbar progressbar--90"><div></div></div></div>
+						<div class="skill"><div class="skill__singleSkill">Docker</div><div class="progressbar progressbar--75"><div></div></div></div>
+						<div class="skill"><div class="skill__singleSkill translation-rwd-layouts">RWD-Layouts</div><div class="progressbar progressbar--75"><div></div></div></div>
+						<div class="skill"><div class="skill__singleSkill">Elastic-Search</div><div class="progressbar progressbar--30"><div></div></div></div>
+						<div class="skill"><div class="skill__singleSkill">Rabbit-MQ</div><div class="progressbar progressbar--40"><div></div></div></div>
+						<div class="skill"><div class="skill__singleSkill">Scaled Agile</div><div class="progressbar progressbar--25"><div></div></div></div>
+					</div>
+				</div>
+
+				<div class="jobExperience">
+					<div class="content__block content__blockJobPosition translation-software-engineer"></div>
+					<div class="content__block content__blockEmployer translation-at-arvato-ecommerce"></div>
+					<div class="content__block content__blockEmployerAddress">Wohlenbergstr. 4d | 30179 Hannover</div>
+					<div class="content__block content__blockEmployerDescription">
+						<div class="content__blockEmployerDescription--text translation-arvato-ecommerce-description"></div>
+
+						<h3 class="translation-tasks"></h3>
+						<ul class="content__blockEmployerDescription--tasks translation-arvato-ecommerce-tasks"></ul>
+
+						<h3 class="translation-new-skills"></h3>
+						<div class="skill"><div class="skill__singleSkill">PHP 5.X - 7.X</div><div class="progressbar progressbar--90"><div></div></div></div>
+						<div class="skill"><div class="skill__singleSkill">Docker</div><div class="progressbar progressbar--60"><div></div></div></div>
+						<div class="skill"><div class="skill__singleSkill">.NET Framework</div><div class="progressbar progressbar--90"><div></div></div></div>
+						<div class="skill"><div class="skill__singleSkill translation-rwd-layouts">RWD-Layouts</div><div class="progressbar progressbar--40"><div></div></div></div>
+						<div class="skill"><div class="skill__singleSkill">MSSQL</div><div class="progressbar progressbar--55"><div></div></div></div>
+						<div class="skill"><div class="skill__singleSkill">Windows Server</div><div class="progressbar progressbar--40"><div></div></div></div>
+						<div class="skill"><div class="skill__singleSkill">Agile Scrum</div><div class="progressbar progressbar--75"><div></div></div></div>
+					</div>
+				</div>
+
+				<div class="jobExperience">
+					<div class="content__block content__blockJobPosition translation-senior-software-engineer"></div>
+					<div class="content__block content__blockEmployer translation-at-franke-bornberg"></div>
+					<div class="content__block content__blockEmployerAddress">Prinzenstr. 16 | 30159 Hannover</div>
+					<div class="content__block content__blockEmployerDescription">
+						<div class="content__blockEmployerDescription--text translation-franke-bornberg-description"></div>
+
+						<h3 class="translation-tasks"></h3>
+						<ul class="content__blockEmployerDescription--tasks translation-franke-bornberg-tasks-sd"></ul>
+
+						<h3 class="translation-new-skills"></h3>
+						<div class="skill"><div class="skill__singleSkill">PHP 5.X</div><div class="progressbar progressbar--30"><div></div></div></div>
+						<div class="skill"><div class="skill__singleSkill">ASP.NET</div><div class="progressbar progressbar--55"><div></div></div></div>
+						<div class="skill"><div class="skill__singleSkill">.NET Framework</div><div class="progressbar progressbar--75"><div></div></div></div>
+						<div class="skill"><div class="skill__singleSkill">Windows Server</div><div class="progressbar progressbar--25"><div></div></div></div>
+						<div class="skill"><div class="skill__singleSkill">Agile Scrum</div><div class="progressbar progressbar--15"><div></div></div></div>
+					</div>
+				</div>
+
+				<div class="jobExperience">
+					<div class="content__block content__blockJobPosition translation-software-engineer"></div>
+					<div class="content__block content__blockEmployer translation-at-franke-bornberg"></div>
+					<div class="content__block content__blockEmployerAddress">Prinzenstr. 16 | 30159 Hannover</div>
+					<div class="content__block content__blockEmployerDescription">
+						<div class="content__blockEmployerDescription--text translation-franke-bornberg-description"></div>
+
+						<h3 class="translation-tasks"></h3>
+						<ul class="content__blockEmployerDescription--tasks translation-franke-bornberg-tasks"></ul>
+
+						<h3 class="translation-new-skills"></h3>
+						<div class="skill"><div class="skill__singleSkill">ASP.NET</div><div class="progressbar progressbar--25"><div></div></div></div>
+						<div class="skill"><div class="skill__singleSkill">.NET Framework</div><div class="progressbar progressbar--50"><div></div></div></div>
+						<div class="skill"><div class="skill__singleSkill">Windows Server</div><div class="progressbar progressbar--15"><div></div></div></div>
+					</div>
+				</div>
 			</div>
-			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			<div>&nbsp;</div>
+			<div>&nbsp;</div>
+			<div>&nbsp;</div>
 		</div>
 	</body>
 </html>

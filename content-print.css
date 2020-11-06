@@ -1,39 +1,5 @@
 .content {
-	position: absolute;
 	text-align: center;
-	top: 47vh;
-}
-
-@media screen and (min-width: 568px) {
-	.content {
-		top: 33vh;
-	}
-}
-
-@media screen and (min-width: 768px) {
-	.content {
-		left: 43vw;
-		max-width: 55vw;
-		min-width: 55vw;
-		text-align: initial;
-		top: 2vh;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	.content {
-		left: 32vw;
-		max-width: 64vw;
-		min-width: 64vw;
-	}
-}
-
-@media screen and (min-width: 1920px) {
-	.content {
-		left: 23vw;
-		max-width: 64vw;
-		min-width: 64vw;
-	}
 }
 
 .content__block {
@@ -55,20 +21,8 @@
 	padding-top: 1vh;
 }
 
-@media screen and (min-width: 1920px) {
-	.content__blockTitle {
-		font-size: 1.9em;
-	}
-}
-
 .content__blockJobPosition {
 	font-size: 1.3em;
-}
-
-@media screen and (min-width: 1920px) {
-	.content__blockJobPosition {
-		font-size: 1.5em;
-	}
 }
 
 .content__blockEmployer {
@@ -123,40 +77,13 @@
 	}
 }
 
-@media screen and (min-width: 1920px) {
-	.content__blockEmployerDescription--tasks {
-		font-size: 0.95em;
-	}
-}
-
-.content__blockEmployerDescription--text {
-
-}
-
-@media screen and (min-width: 768px) {
-	.content__blockEmployerDescription--text {
-		width: 50vw;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	.content__blockEmployerDescription--text {
-		width: 60vw;
-	}
-}
-
-@media screen and (min-width: 1920px) {
-	.content__blockEmployerDescription--text {
-		width: 35vw;
-	}
-}
-
 .content__lastUpdate {
 	font-size: 0.7em;
 }
 
 @media screen and (min-width: 568px) {
 	.content__lastUpdate {
+		text-align: right;
 		padding-right: 10px;
 		padding-top: 10px;
 	}
@@ -169,11 +96,6 @@
 	}
 }
 
-@media screen and (min-width: 1920px) {
-	.content__lastUpdate {
-		font-size: 0.9em;
-	}
-}
 
 .jobExperience {
 	padding-bottom: 50px;
@@ -200,19 +122,6 @@
 	width: 10em;
 }
 
-@media screen and (min-width: 1920px) {
-	.progressbar>div {
-		height: 0.6em;
-	}
-}
-
-.progressbar--15>div {
-	width: 15%;
-}
-.progressbar--25>div {
-	width: 25%;
-}
-
 .progressbar--30>div {
 	width: 30%;
 }
@@ -221,16 +130,8 @@
 	width: 40%;
 }
 
-.progressbar--50>div {
-	width: 50%;
-}
-
 .progressbar--55>div {
 	width: 55%;
-}
-
-.progressbar--60>div {
-	width: 60%;
 }
 
 .progressbar--70>div {
@@ -282,11 +183,5 @@
 	.skill__singleSkill {
 		display: inline-block;
 		width: 12vw;
-	}
-}
-
-@media screen and (min-width: 1920px) {
-	.skill__singleSkill {
-		font-size: 0.95em;
 	}
 }
