@@ -71,6 +71,43 @@
 	}
 }
 
+.content__blockJobPosition--timespan {
+
+}
+
+@media screen and (min-width: 768px) {
+	.content__blockJobPosition--timespan {
+		background-color: #FFF;
+		border: 1px solid #ccc;
+		font-size: 0.9em;
+		left: -18vw;
+		padding: 5px;
+		position: absolute;
+		text-align: center;
+		vertical-align: middle;
+		width: 13vw;
+		z-index: 3;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.content__blockJobPosition--timespan {
+		left: -13vw;
+		width: 9vw;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.content__blockJobPosition--timespan {
+		left: -7.5vw;
+		width: 5vw;
+	}
+}
+
+.content__blockJobPosition--timespanWrapper {
+	position: relative;
+}
+
 .content__blockEmployer {
 	font-size: 0.8em;
 }
@@ -206,9 +243,14 @@
 	}
 }
 
+.progressbar--5>div {
+	width: 5%;
+}
+
 .progressbar--15>div {
 	width: 15%;
 }
+
 .progressbar--25>div {
 	width: 25%;
 }
@@ -234,15 +276,23 @@
 }
 
 .progressbar--70>div {
+	background-color: lightgreen;
 	width: 70%;
 }
 
 .progressbar--75>div {
+	background-color: lightgreen;
 	width: 75%;
 }
 
 .progressbar--90>div {
+	background-color: lightgreen;
 	width: 90%;
+}
+
+.progressbar--95>div {
+	background-color: lightgreen;
+	width: 95%;
 }
 
 .skill {
