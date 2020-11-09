@@ -1,7 +1,7 @@
 .content {
-	position: absolute;
+	position: relative;
 	text-align: center;
-	top: 47vh;
+	top: 48vh;
 }
 
 @media screen and (min-width: 568px) {
@@ -293,6 +293,11 @@
 .progressbar--95>div {
 	background-color: lightgreen;
 	width: 95%;
+}
+
+.progressbar--100>div {
+	background-color: lightgreen;
+	width: 100%;
 }
 
 .skill {
