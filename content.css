@@ -1,7 +1,7 @@
 .content {
 	position: relative;
 	text-align: center;
-	top: 48vh;
+	top: 300px;
 }
 
 @media screen and (min-width: 568px) {
@@ -37,8 +37,8 @@
 }
 
 .content__block {
-	margin-right: 2vw;
-	margin-left: 2vw;
+	margin-right: 10px;
+	margin-left: 10px;
 }
 
 @media screen and (min-width: 568px) {
@@ -50,7 +50,7 @@
 
 .content__blockJobExperiences--icon {
 	margin-right: unset;
-	width: 6vw;
+	width: 22px;
 }
 
 @media screen and (min-width: 568px) {
@@ -77,8 +77,8 @@
 	color: lightblue;
 	display: inline-block;
 	font-size: 1.5em;
-	padding-bottom: 1vh;
-	padding-top: 1vh;
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
 
 @media screen and (min-width: 1920px) {
@@ -339,7 +339,7 @@
 .skill__singleSkill {
 	display: inline-block;
 	font-size: 0.7em;
-	width: 30vw;
+	width: 110px;
 	text-align: right;
 	padding-right: 10px;
 	padding-top: 5px;
