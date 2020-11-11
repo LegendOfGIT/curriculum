@@ -1,0 +1,296 @@
+html, body {
+	-webkit-print-color-adjust: exact;
+	width: 210mm;
+	height: 297mm;
+}
+
+.content {
+	left: 43vw;
+	position: relative;
+	max-width: 55vw;
+	min-width: 55vw;
+	text-align: initial;
+	top: 2vh;
+}
+
+.content__block {
+	margin-right: inherit;
+	margin-left: inherit;
+}
+
+.content__blockEmployer {
+	font-size: 0.8em;
+}
+
+.content__blockEmployerAddress {
+	background: left;
+	background-image: url('images/place-icon.png');
+	background-repeat: no-repeat;
+	background-size: 16px;
+	display: initial;
+	font-size: 0.8em;
+	left: -20px;
+	padding-left: 20px;
+	position: relative;
+	top: 5px;
+}
+
+.content__blockEmployerDescription {
+	display: inline-block;
+	font-size: 0.9em;
+	padding-top: 15px;
+	width: unset;
+}
+
+.content__blockEmployerDescription--tasks {
+	font-size: 0.8em;
+	padding-left: 2vw;
+	text-align: initial;
+}
+
+.content__blockEmployerDescription--text {
+	width: 50vw;
+}
+
+.content__blockJobExperiences--icon {
+	margin-right: unset;
+	padding-right: 1vw;
+	width: 3.3vw;
+}
+
+.content__blockJobPosition {
+	font-size: 1.3em;
+}
+
+.content__blockJobPosition--timespan {
+	background-color: #FFF;
+	border: 1px solid #ccc;
+	box-shadow: 0 3px 6px -2px #b1b1b1;
+	font-size: 0.7em;
+	left: -16vw;
+	padding: 5px;
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	width: 10vw;
+	z-index: 3;
+}
+
+.content__blockJobPosition--timespanWrapper {
+	position: relative;
+}
+
+.content__blockTitle {
+	color: lightblue;
+	display: inline-block;
+	font-size: 1.5em;
+	padding-bottom: 1vh;
+	padding-top: 1vh;
+}
+
+.content__lastUpdate {
+	display: none;
+}
+
+.header {
+	background-color: lightblue;
+	color: #FFF;
+	height: 100vh;
+	max-width: 25vw;
+	min-width: 25vh;
+	position: fixed;
+	text-align: unset;
+	z-index: 2;
+}
+
+.header__block {
+	display: inline-block;
+	padding-left: 5vw;
+	padding-top: 3.5vh;
+}
+
+.header__block--additionalInformation {
+	display: block;
+	left: 30vw;
+	padding: unset;
+	padding-left: 3vw;
+	padding-top: 16vh;
+	position: initial;
+	top: 12vh;
+}
+
+.header__block--languages {
+	display: none;
+}
+
+.header__container {
+	background-repeat: no-repeat;
+	display: inherit;
+	font-size: 0.75em;
+	left: unset;
+	padding-left: 20px;
+	padding-bottom: 5px;
+	padding-top: 10px;
+	text-align: unset;
+	width: unset;
+}
+
+.header__container--address {
+	background-image: url("images/home.png");
+	background-position: left;
+	background-size: 15px;
+}
+
+.header__container--email {
+	background-image: url("images/email-icon.png");
+	background-position: left;
+	background-size: 14px;
+	left: 26.2vw;
+}
+
+.header__container--github {
+	background-image: url("images/github-icon.png");
+	background-position: left;
+	background-size: 13px;
+}
+
+.header__container--github a {
+	color: #FFF;
+}
+
+.header__container--title {
+	display: initial;
+	font-size: 0.9em;
+	font-weight: bold;
+	padding-top: 10px;
+	text-transform: uppercase;
+	top: 20vh;
+}
+
+.header__firstName {
+	display: block;
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+.header__image {
+	background-color: white;
+	box-shadow: 0 3px 6px -2px #b1b1b1;
+	max-width: 150px;
+	padding: 10px 10px 20px 10px;
+	width: 15vw;
+}
+
+.header__imageContainer {
+	font-size: 0.9em;
+	left: 5vw;
+	position: absolute;
+	right: 5vw;
+	top: 13vh;
+}
+
+.header__lastName {
+	display: block;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+.header__name {
+	padding-bottom: 5px;
+	padding-top: initial;
+}
+
+.header__profession {
+	font-size: 0.8em;
+	padding-bottom: 5px;
+}
+
+.jobExperience {
+	page-break-inside: avoid;
+	padding-bottom: 50px;
+}
+
+.progressbar {
+	background-color: #FFF;
+	border: 1px solid lightgray;
+	border-radius: 13px;
+	display: inline-block;
+	width: 10em;
+}
+
+.progressbar>div {
+	background-color: lightblue;
+	height: 0.5em;
+	border-radius: 10px;
+	width: 10em;
+}
+
+.progressbar--5>div {
+	width: 5%;
+}
+
+.progressbar--15>div {
+	width: 15%;
+}
+
+.progressbar--25>div {
+	width: 25%;
+}
+
+.progressbar--30>div {
+	width: 30%;
+}
+
+.progressbar--40>div {
+	width: 40%;
+}
+
+.progressbar--50>div {
+	width: 50%;
+}
+
+.progressbar--55>div {
+	width: 55%;
+}
+
+.progressbar--60>div {
+	width: 60%;
+}
+
+.progressbar--70>div {
+	background-color: lightgreen;
+	width: 70%;
+}
+
+.progressbar--75>div {
+	background-color: lightgreen;
+	width: 75%;
+}
+
+.progressbar--90>div {
+	background-color: lightgreen;
+	width: 90%;
+}
+
+.progressbar--95>div {
+	background-color: lightgreen;
+	width: 95%;
+}
+
+.progressbar--100>div {
+	background-color: lightgreen;
+	width: 100%;
+}
+
+.skill {
+}
+
+.skill__singleSkill {
+	display: inline-block;
+	font-size: 0.8em;
+	text-align: initial;
+	padding-bottom: 8px;
+	padding-right: 10px;
+	padding-top: 5px;
+	width: 14vw;
+}

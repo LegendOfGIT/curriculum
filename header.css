@@ -271,7 +271,6 @@
 
 @media screen and (min-width: 768px) {
 	.header__imageContainer {
-		position: absolute;
 		left: 5vw;
 		top: 13.5vh;
 	}
@@ -279,7 +278,6 @@
 
 @media screen and (min-width: 1024px) {
 	.header__imageContainer {
-		position: absolute;
 		left: 4vw;
 		top: 19vh;
 	}
@@ -375,7 +373,6 @@
 
 @media screen and (min-width: 568px) {
 	.header__profession {
-		font-size: 0.6em;
 		padding-left: 20px;
 	}
 }

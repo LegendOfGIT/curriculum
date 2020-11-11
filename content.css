@@ -48,8 +48,34 @@
 	}
 }
 
+.content__blockJobExperiences--icon {
+	margin-right: unset;
+	width: 6vw;
+}
+
+@media screen and (min-width: 568px) {
+	.content__blockJobExperiences--icon {
+		padding-right: 1vw;
+		width: 4vw;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.content__blockJobExperiences--icon {
+		width: 3.3vw;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.content__blockJobExperiences--icon {
+		padding-right: 0.5vw;
+		width: 2.3vw;
+	}
+}
+
 .content__blockTitle {
 	color: lightblue;
+	display: inline-block;
 	font-size: 1.5em;
 	padding-bottom: 1vh;
 	padding-top: 1vh;
@@ -79,6 +105,7 @@
 	.content__blockJobPosition--timespan {
 		background-color: #FFF;
 		border: 1px solid #ccc;
+		box-shadow: 0 3px 6px -2px #b1b1b1;
 		font-size: 0.9em;
 		left: -18vw;
 		padding: 5px;
