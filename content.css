@@ -4,9 +4,45 @@
 	top: 300px;
 }
 
+@media screen and (min-width: 375px) {
+	.content {
+		top: 310px;
+	}
+}
+
 @media screen and (min-width: 568px) {
 	.content {
-		top: 33vh;
+		top: 120px;
+	}
+}
+
+@media screen and (min-width: 640px) {
+	.content {
+		top: 120px;
+	}
+}
+
+@media screen and (min-width: 667px) {
+	.content {
+		top: 110px;
+	}
+}
+
+@media screen and (min-width: 720px) {
+	.content {
+		top: 120px;
+	}
+}
+
+@media screen and (min-width: 731px) {
+	.content {
+		top: 130px;
+	}
+}
+
+@media screen and (min-width: 736px) {
+	.content {
+		top: 120px;
 	}
 }
 
@@ -26,20 +62,12 @@
 	}
 }
 
-@media screen and (min-width: 1920px) {
-	.content {
-		left: 23vw;
-		max-width: 64vw;
-		min-width: 64vw;
-	}
-}
-
 .content__block {
 	margin-right: 10px;
 	margin-left: 10px;
 }
 
-@media screen and (min-width: 568px) {
+@media screen and (min-width: 360px) {
 	.content__block {
 		margin-right: inherit;
 		margin-left: inherit;
@@ -48,6 +76,12 @@
 
 .content__blockEvent {
 	font-size: 1.3em;
+}
+
+@media screen and (min-width: 1440px) {
+	.content__blockEvent {
+		font-size: 1.4em;
+	}
 }
 
 @media screen and (min-width: 1920px) {
@@ -83,10 +117,11 @@
 	}
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 2560px) {
 	.content__blockEvent--timespan {
-		left: -7.5vw;
-		width: 5vw;
+		font-size: 1.1em;
+		padding: 10px;
+		width: 100px;
 	}
 }
 
@@ -99,10 +134,16 @@
 	width: 22px;
 }
 
+@media screen and (min-width: 360px) {
+	.content__blockJobExperiences--icon {
+		width: 24px;
+	}
+}
+
 @media screen and (min-width: 568px) {
 	.content__blockJobExperiences--icon {
-		padding-right: 1vw;
-		width: 4vw;
+		padding-right: 5px;
+		width: 24px;
 	}
 }
 
@@ -149,6 +190,12 @@
 	padding-top: 10px;
 }
 
+@media screen and (min-width: 1440px) {
+	.content__blockTitle {
+		font-size: 1.7em;
+	}
+}
+
 @media screen and (min-width: 1920px) {
 	.content__blockTitle {
 		font-size: 1.9em;
@@ -160,10 +207,17 @@
 	padding-top: 10px;
 }
 
+@media screen and (min-width: 360px) {
+	.content__blockEmployerDescription {
+		display: inline-block;
+		width: 290px;
+	}
+}
+
 @media screen and (min-width: 568px) {
 	.content__blockEmployerDescription {
 		display: inline-block;
-		width: 80vw;
+		width: 450px;
 	}
 }
 
@@ -177,6 +231,12 @@
 .content__blockEmployerDescription--tasks {
 	font-size: 0.8em;
 	text-align: initial;
+}
+
+@media screen and (min-width: 425px) {
+	.content__blockEmployerDescription--tasks {
+		font-size: 0.9em;
+	}
 }
 
 @media screen and (min-width: 768px) {
@@ -207,9 +267,9 @@
 	}
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
 	.content__blockEmployerDescription--text {
-		width: 35vw;
+		width: 850px;
 	}
 }
 
@@ -228,6 +288,12 @@
 	.content__lastUpdate {
 		padding-top: inherit;
 		text-align: initial;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.content__lastUpdate {
+		font-size: 0.8em;
 	}
 }
 
@@ -347,9 +413,15 @@
 	padding-top: 5px;
 }
 
+@media screen and (min-width: 425px) {
+	.skill__singleSkill {
+		font-size: 0.85em;
+	}
+}
+
 @media screen and (min-width: 568px) {
 	.skill__singleSkill {
-		width: 24vw;
+		width: 150px;
 	}
 }
 
@@ -366,6 +438,12 @@
 	.skill__singleSkill {
 		display: inline-block;
 		width: 120px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.skill__singleSkill {
+		width: 180px;
 	}
 }
 

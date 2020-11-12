@@ -1,5 +1,6 @@
 .header {
-	background-color: lightblue;
+	background-image: url("images/header-background.png");
+	background-size: 135px;
 	color: #FFF;
 	height: 210px;
 	position: fixed;
@@ -10,13 +11,26 @@
 
 @media screen and (min-width: 568px) {
 	.header {
-		min-height: 30vh;
+		height: 100px;
 		text-align: unset;
+	}
+}
+
+@media screen and (min-width: 640px) {
+	.header {
+		background-size: 110px;
+	}
+}
+
+@media screen and (min-width: 720px) {
+	.header {
+		height: 110px;
 	}
 }
 
 @media screen and (min-width: 768px) {
 	.header {
+		background-size: 140px;
 		height: 100%;
 		text-align: unset;
 		width: 270px;
@@ -26,6 +40,12 @@
 @media screen and (min-width: 1024px) {
 	.header {
 		width: 280px;
+	}
+}
+
+@media screen and (min-width: 2560px) {
+	.header {
+		width: 480px;
 	}
 }
 
@@ -59,11 +79,11 @@
 
 @media screen and (min-width: 375px) {
 	.header__block--additionalInformation {
-		width: 350px;
+		width: 370px;
 	}
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 411px) {
 	.header__block--additionalInformation {
 		display: inline-block;
 	}
@@ -71,9 +91,16 @@
 
 @media screen and (min-width: 568px) {
 	.header__block--additionalInformation {
-		left: 30vw;
+		left: 160px;
 		position: absolute;
-		top: 5vh;
+		top: 15px;
+		width: unset;
+	}
+}
+
+@media screen and (min-width: 667px) {
+	.header__block--additionalInformation {
+		left: 190px;
 	}
 }
 
@@ -81,7 +108,7 @@
 	.header__block--additionalInformation {
 		display: block;
 		padding-left: 20px;
-		padding-top: 150px;
+		padding-top: 170px;
 		position: initial;
 	}
 }
@@ -93,24 +120,25 @@
 	}
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 2560px) {
 	.header__block--additionalInformation {
-		padding-left: 3.3vw;
+		padding-left: 20px;
+		padding-top: 290px;
 	}
 }
 
 .header__block--languages {
 	position: fixed;
-	right: 20px;
+	right: 10px;
 	top: 10px;
 }
 
 @media screen and (min-width: 568px) {
 	.header__block--languages {
 		display: grid;
-		left: 73vw;
+		right: 130px;
 		position: absolute;
-		top: 5vh;
+		top: 15px;
 	}
 }
 
@@ -121,6 +149,14 @@
 		padding-top: 10px;
 		right: inherit;
 		top: 10px;
+	}
+}
+
+@media screen and (min-width: 2560px) {
+	.header__block--languages {
+		padding-left: 55px;
+		padding-top: 20px;
+		top: 20px;
 	}
 }
 
@@ -141,7 +177,6 @@
 @media screen and (min-width: 568px) {
 	.header__container {
 		display: inherit;
-		left: 25vw;
 		padding-bottom: 5px;
 		padding-top: inherit;
 	}
@@ -163,10 +198,23 @@
 	}
 }
 
+@media screen and (min-width: 2560px) {
+	.header__container {
+		font-size: 1.15em;
+		padding-left: 35px;
+	}
+}
+
 .header__container--address {
 	background-image: url("images/home.png");
 	background-position: left;
 	background-size: 15px;
+}
+
+@media screen and (min-width: 2560px) {
+	.header__container {
+		background-size: 25px;
+	}
 }
 
 .header__container--email {
@@ -175,9 +223,9 @@
 	background-size: 14px;
 }
 
-@media screen and (min-width: 568px) {
+@media screen and (min-width: 2560px) {
 	.header__container--email {
-		left: 26.2vw;
+		background-size: 23px;
 	}
 }
 
@@ -193,6 +241,12 @@
 
 .header__container--github a {
 	color: #FFF;
+}
+
+@media screen and (min-width: 2560px) {
+	.header__container--github {
+		background-size: 23px;
+	}
 }
 
 .header__container--title {
@@ -215,6 +269,12 @@
 	}
 }
 
+@media screen and (min-width: 2560px) {
+	.header__container--title {
+		font-size: 1.3em;
+	}
+}
+
 .header__firstName {
 	display: block;
 	font-size: 0.8em;
@@ -233,6 +293,12 @@
 	}
 }
 
+@media screen and (min-width: 667px) {
+	.header__firstName {
+		font-size: 0.8em;
+	}
+}
+
 @media screen and (min-width: 768px) {
 	.header__firstName {
 		font-size: 1.2em;
@@ -245,17 +311,22 @@
 	}
 }
 
+@media screen and (min-width: 2560px) {
+	.header__firstName {
+		font-size: 1.8em;
+	}
+}
+
 .header__image {
 	background-color: white;
 	box-shadow: 0 3px 6px -2px #b1b1b1;
-	max-width: 150px;
 	padding: 10px 10px 20px 10px;
 	width: 100px;
 }
 
 @media screen and (min-width: 568px) {
 	.header__image {
-		width: 10vw;
+		width: 75px;
 	}
 }
 
@@ -271,6 +342,12 @@
 	}
 }
 
+@media screen and (min-width: 2560px) {
+	.header__image {
+		width: 220px;
+	}
+}
+
 .header__imageContainer {
 	position: relative;
 	top: 15px;
@@ -280,8 +357,8 @@
 	.header__imageContainer {
 		font-size: 0.9em;
 		position: absolute;
-		right: 5vw;
-		top: 5vh;
+		right: 15px;
+		top: 15px;
 	}
 }
 
@@ -299,6 +376,14 @@
 	}
 }
 
+@media screen and (min-width: 2560px) {
+	.header__imageContainer {
+		left: 40px;
+		padding-left: 15px;
+		top: 250px;
+	}
+}
+
 .header__language {
 	display: inline-block;
 	width: 20px;
@@ -306,7 +391,7 @@
 
 @media screen and (min-width: 375px) {
 	.header__language {
-		width: 22px;
+		width: 25px;
 	}
 }
 
@@ -316,10 +401,17 @@
 	}
 }
 
+@media screen and (min-width: 540px) {
+	.header__language {
+		padding-right: 5px;
+		width: 30px;
+	}
+}
+
 @media screen and (min-width: 568px) {
 	.header__language {
 		padding-bottom: 3px;
-		width: 5vw;
+		width: 28px;
 	}
 }
 
@@ -336,10 +428,16 @@
 	}
 }
 
+@media screen and (min-width: 2560px) {
+	.header__language {
+		padding-right: 10px;
+		width: 60px;
+	}
+}
+
 .header__languageImage {
 	border: 1px solid lightblue;
 	border-radius: 50%;
-	max-width: 40px;
 	width: 100%;
 }
 
@@ -365,6 +463,12 @@
 	}
 }
 
+@media screen and (min-width: 667px) {
+	.header__lastName {
+		font-size: 1.1em;
+	}
+}
+
 @media screen and (min-width: 768px) {
 	.header__lastName {
 		font-size: 1.5em;
@@ -377,6 +481,12 @@
 	}
 }
 
+@media screen and (min-width: 2560px) {
+	.header__lastName {
+		font-size: 2.3em;
+	}
+}
+
 .header__name {
 	padding-bottom: 5px;
 	padding-top: 10px;
@@ -385,7 +495,7 @@
 @media screen and (min-width: 568px) {
 	.header__name {
 		padding-left: 20px;
-		padding-top: 5vh;
+		padding-top: 15px;
 	}
 }
 
@@ -398,6 +508,13 @@
 @media screen and (min-width: 768px) {
 	.header__name {
 		padding-left: unset;
+	}
+}
+
+@media screen and (min-width: 2560px) {
+	.header__name {
+		padding-left: 15px;
+		padding-top: 40px;
 	}
 }
 
@@ -434,5 +551,12 @@
 @media screen and (min-width: 1920px) {
 	.header__profession {
 		font-size: 1.0em;
+	}
+}
+
+@media screen and (min-width: 2560px) {
+	.header__profession {
+		font-size: 1.2em;
+		padding-left: 15px;
 	}
 }
