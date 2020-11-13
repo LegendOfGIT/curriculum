@@ -37,8 +37,21 @@
 	}
 }
 
+@media screen and (min-width: 812px) {
+	.header {
+		margin-bottom: -5000px;
+		padding-bottom: 5000px;
+		position: absolute;
+		overflow: hidden;
+	}
+}
+
 @media screen and (min-width: 1024px) {
 	.header {
+		margin-bottom: initial;
+		padding-bottom: initial;
+		position: fixed;
+		overflow: initial;
 		width: 280px;
 	}
 }
@@ -185,6 +198,16 @@
 @media screen and (min-width: 768px) {
 	.header__container {
 		font-size: 0.75em;
+		left: unset;
+		text-align: unset;
+		padding-top: 10px;
+		width: unset;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.header__container {
+		font-size: 0.88em;
 		left: unset;
 		text-align: unset;
 		padding-top: 10px;

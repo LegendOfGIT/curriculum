@@ -2,7 +2,7 @@
 	<head>
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 		<title>Curriculum Vitae | Marcel Marschner</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="content.css" media="screen"/>
 		<link rel="stylesheet" type="text/css" href="header.css" media="screen"/>
@@ -132,188 +132,190 @@
 			}
 		</script>
 
-		<div class="header">
-			<div class="header__block header__block--languages">
-				<div class="header__language">
-					<img id="language-de" class="header__languageImage header__languageImage--active" src="images/flag-german.png" onClick="changeLanguage('de');"/>
+		<div>
+			<div class="header">
+				<div class="header__block header__block--languages">
+					<div class="header__language">
+						<img id="language-de" class="header__languageImage header__languageImage--active" src="images/flag-german.png" onClick="changeLanguage('de');"/>
+					</div>
+					<div class="header__language">
+						<img id="language-en" class="header__languageImage" src="images/flag-uk.jpg" onClick="changeLanguage('en');"/>
+					</div>
+					<div class="header__language">
+						<img id="language-es" class="header__languageImage" src="images/flag-spain.gif" onClick="changeLanguage('es');"/>
+					</div>
 				</div>
-				<div class="header__language">
-					<img id="language-en" class="header__languageImage" src="images/flag-uk.jpg" onClick="changeLanguage('en');"/>
+				<div class="header__block">
+					<div class="header__name">
+						<div class="header__firstName">Marcel</div>
+						<div class="header__lastName">Marschner</div>
+					</div>
+					<div class="header__profession translation-software-engineer"></div>
 				</div>
-				<div class="header__language">
-					<img id="language-es" class="header__languageImage" src="images/flag-spain.gif" onClick="changeLanguage('es');"/>
+				<div class="header__block header__block--additionalInformation">
+					<div class="header__container header__container--title translation-personal-data"></div>
+					<div class="header__container header__container--address">
+						Bachstr. 8 31303 Ehlershausen
+					</div>
+					<div class="header__container header__container--email">
+						<a href="mailto:marcel.marschner@outlook.com">marcel.marschner@outlook.com</a>
+					</div>
+					<div class="header__container header__container--github">
+						<a href="https://github.com/LegendOfGIT" target="github">https://github.com/LegendOfGIT</a>
+					</div>
+				</div>
+
+				<div class="header__imageContainer">
+					<img class="header__image" src="images/marcel-marschner.jpg"/>
 				</div>
 			</div>
-			<div class="header__block">
-				<div class="header__name">
-					<div class="header__firstName">Marcel</div>
-					<div class="header__lastName">Marschner</div>
+			<div class="content">
+				<div class="content__block">
+					<div class="content__lastUpdate"><span class="translation-last-update"></span>: 12.11.2020</div>
+					<img class="content__block content__blockJobExperiences--icon" src="images/factory-icon.png"/>
+
+					<div class="content__block content__blockTitle translation-job-experiences"></div>
+
+					<div class="jobExperience">
+						<div class="content__block content__blockEvent translation-software-engineer"></div>
+						<div class="content__block content__blockEvent--timespanWrapper">
+							<div class="content__block content__blockEvent--timespan">
+								<span class="translation-from"></span> 06.2020 <span class="translation-to"></span>	<span class="translation-today"></span>
+							</div>
+						</div>
+						<div class="content__block content__blockLocation translation-at-arvato-scs"></div>
+						<div class="content__block content__blockLocationAddress">Wohlenbergstr. 3 | 30179 Hannover</div>
+						<div class="content__block content__blockEmployerDescription">
+							<div class="content__blockEmployerDescription--text translation-arvato-scs-description"></div>
+
+							<h3 class="translation-tasks"></h3>
+							<ul class="content__blockEmployerDescription--tasks translation-arvato-scs-tasks"></ul>
+
+							<h3 class="translation-new-skills"></h3>
+							<div class="skill"><div class="skill__singleSkill">PageSpeed</div><div class="progressbar progressbar--70"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">Kubernetes</div><div class="progressbar progressbar--70"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">React</div><div class="progressbar progressbar--90"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">NodeJS</div><div class="progressbar progressbar--90"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">Docker</div><div class="progressbar progressbar--75"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">TDD</div><div class="progressbar progressbar--95"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill translation-rwd-layouts">RWD-Layouts</div><div class="progressbar progressbar--75"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">Elastic-Search</div><div class="progressbar progressbar--30"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">Rabbit-MQ</div><div class="progressbar progressbar--40"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">Scaled Agile</div><div class="progressbar progressbar--25"><div></div></div></div>
+						</div>
+					</div>
+					<div class="jobExperience">
+						<div class="content__block content__blockEvent translation-software-engineer"></div>
+						<div class="content__block content__blockEvent--timespanWrapper">
+							<div class="content__block content__blockEvent--timespan">
+								<span class="translation-from"></span> 02.2016 <span class="translation-to"></span>	06.2020
+							</div>
+						</div>
+						<div class="content__block content__blockLocation translation-at-arvato-ecommerce"></div>
+						<div class="content__block content__blockLocationAddress">Wohlenbergstr. 4d | 30179 Hannover</div>
+						<div class="content__block content__blockEmployerDescription">
+							<div class="content__blockEmployerDescription--text translation-arvato-ecommerce-description"></div>
+
+							<h3 class="translation-tasks"></h3>
+							<ul class="content__blockEmployerDescription--tasks translation-arvato-ecommerce-tasks"></ul>
+
+							<h3 class="translation-new-skills"></h3>
+							<div class="skill"><div class="skill__singleSkill">PHP 5.X - 7.X</div><div class="progressbar progressbar--90"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">Docker</div><div class="progressbar progressbar--60"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">NodeJS</div><div class="progressbar progressbar--25"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">React</div><div class="progressbar progressbar--15"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">Resilience</div><div class="progressbar progressbar--70"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">CI/CD</div><div class="progressbar progressbar--60"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">Bamboo</div><div class="progressbar progressbar--75"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">MVC</div><div class="progressbar progressbar--100"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">Clean-Architecture</div><div class="progressbar progressbar--75"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">.NET Framework</div><div class="progressbar progressbar--90"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">TDD</div><div class="progressbar progressbar--75"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill translation-rwd-layouts">RWD-Layouts</div><div class="progressbar progressbar--40"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">MSSQL</div><div class="progressbar progressbar--55"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">Windows Server</div><div class="progressbar progressbar--40"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">Agile Scrum</div><div class="progressbar progressbar--75"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">GIT / GIT-Flow</div><div class="progressbar progressbar--95"><div></div></div></div>
+						</div>
+					</div>
+					<div class="jobExperience">
+						<div class="content__block content__blockEvent translation-senior-software-engineer"></div>
+						<div class="content__block content__blockEvent--timespanWrapper">
+							<div class="content__block content__blockEvent--timespan">
+								<span class="translation-from"></span> 01.2015 <span class="translation-to"></span>	02.2016
+							</div>
+						</div>
+						<div class="content__block content__blockLocation translation-at-franke-bornberg"></div>
+						<div class="content__block content__blockLocationAddress">Prinzenstr. 16 | 30159 Hannover</div>
+						<div class="content__block content__blockEmployerDescription">
+							<div class="content__blockEmployerDescription--text translation-franke-bornberg-description"></div>
+
+							<h3 class="translation-tasks"></h3>
+							<ul class="content__blockEmployerDescription--tasks translation-franke-bornberg-tasks-sd"></ul>
+
+							<h3 class="translation-new-skills"></h3>
+							<div class="skill"><div class="skill__singleSkill">PHP 5.X</div><div class="progressbar progressbar--30"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">ASP.NET</div><div class="progressbar progressbar--55"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">TDD</div><div class="progressbar progressbar--5"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">.NET Framework</div><div class="progressbar progressbar--75"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">Windows Server</div><div class="progressbar progressbar--25"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">Agile Scrum</div><div class="progressbar progressbar--15"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">SVN</div><div class="progressbar progressbar--90"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">GIT</div><div class="progressbar progressbar--15"><div></div></div></div>
+						</div>
+					</div>
+					<div class="jobExperience">
+						<div class="content__block content__blockEvent translation-software-engineer"></div>
+						<div class="content__block content__blockEvent--timespanWrapper">
+							<div class="content__block content__blockEvent--timespan">
+								<span class="translation-from"></span> 03.2006 <span class="translation-to"></span>	01.2015
+							</div>
+						</div>
+						<div class="content__block content__blockLocation translation-at-franke-bornberg"></div>
+						<div class="content__block content__blockLocationAddress">Prinzenstr. 16 | 30159 Hannover</div>
+						<div class="content__block content__blockEmployerDescription">
+							<div class="content__blockEmployerDescription--text translation-franke-bornberg-description"></div>
+
+							<h3 class="translation-tasks"></h3>
+							<ul class="content__blockEmployerDescription--tasks translation-franke-bornberg-tasks"></ul>
+
+							<h3 class="translation-new-skills"></h3>
+							<div class="skill"><div class="skill__singleSkill">ASP.NET</div><div class="progressbar progressbar--25"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">.NET Framework</div><div class="progressbar progressbar--50"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">Windows Server</div><div class="progressbar progressbar--15"><div></div></div></div>
+							<div class="skill"><div class="skill__singleSkill">SVN</div><div class="progressbar progressbar--50"><div></div></div></div>
+						</div>
+					</div>
+
+					<div class="content__block content__blockTitle translation-education"></div>
+
+					<div class="education">
+						<div class="content__block content__blockEvent translation-graduation-from-high-school"></div>
+						<div class="content__block content__blockEvent--timespanWrapper">
+							<div class="content__block content__blockEvent--timespan">
+								<span class="translation-from"></span> 2010 <span class="translation-to"></span> 2012
+							</div>
+						</div>
+						<div class="content__block content__blockLocation translation-at-evening-high-school"></div>
+						<div class="content__block content__blockLocationAddress">Thurnithistraße 6 | 30519 Hannover</div>
+
+						<h3><span class="translation-grade"></span> 2,1</h3>
+					</div>
+					<div class="education">
+						<div class="content__block content__blockEvent translation-it-specialist-sd">Fachinformatiker / Anwendungsentwicklung</div>
+						<div class="content__block content__blockEvent--timespanWrapper">
+							<div class="content__block content__blockEvent--timespan">
+								<span class="translation-from"></span> 2003 <span class="translation-to"></span> 2006
+							</div>
+						</div>
+						<div class="content__block content__blockLocation">Easy-EDV GmbH</div>
+						<div class="content__block content__blockLocationAddress">Schneckenburgerstraße 22 | 30177 Hannover</div>
+					</div>
 				</div>
-				<div class="header__profession translation-software-engineer"></div>
+				<div>&nbsp;</div>
+				<div>&nbsp;</div>
+				<div>&nbsp;</div>
 			</div>
-			<div class="header__block header__block--additionalInformation">
-				<div class="header__container header__container--title translation-personal-data"></div>
-				<div class="header__container header__container--address">
-					Bachstr. 8 31303 Ehlershausen
-				</div>
-				<div class="header__container header__container--email">
-					<a href="mailto:marcel.marschner@outlook.com">marcel.marschner@outlook.com</a>
-				</div>
-				<div class="header__container header__container--github">
-					<a href="https://github.com/LegendOfGIT" target="github">https://github.com/LegendOfGIT</a>
-				</div>
-			</div>
-
-			<div class="header__imageContainer">
-				<img class="header__image" src="images/marcel-marschner.jpg"/>
-			</div>
-		</div>
-		<div class="content">
-			<div class="content__block">
-				<div class="content__lastUpdate"><span class="translation-last-update"></span>: 12.11.2020</div>
-				<img class="content__block content__blockJobExperiences--icon" src="images/factory-icon.png"/>
-
-				<div class="content__block content__blockTitle translation-job-experiences"></div>
-
-				<div class="jobExperience">
-					<div class="content__block content__blockEvent translation-software-engineer"></div>
-					<div class="content__block content__blockEvent--timespanWrapper">
-						<div class="content__block content__blockEvent--timespan">
-							<span class="translation-from"></span> 06.2020 <span class="translation-to"></span>	<span class="translation-today"></span>
-						</div>
-					</div>
-					<div class="content__block content__blockLocation translation-at-arvato-scs"></div>
-					<div class="content__block content__blockLocationAddress">Wohlenbergstr. 3 | 30179 Hannover</div>
-					<div class="content__block content__blockEmployerDescription">
-						<div class="content__blockEmployerDescription--text translation-arvato-scs-description"></div>
-
-						<h3 class="translation-tasks"></h3>
-						<ul class="content__blockEmployerDescription--tasks translation-arvato-scs-tasks"></ul>
-
-						<h3 class="translation-new-skills"></h3>
-						<div class="skill"><div class="skill__singleSkill">PageSpeed</div><div class="progressbar progressbar--70"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">Kubernetes</div><div class="progressbar progressbar--70"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">React</div><div class="progressbar progressbar--90"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">NodeJS</div><div class="progressbar progressbar--90"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">Docker</div><div class="progressbar progressbar--75"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">TDD</div><div class="progressbar progressbar--95"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill translation-rwd-layouts">RWD-Layouts</div><div class="progressbar progressbar--75"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">Elastic-Search</div><div class="progressbar progressbar--30"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">Rabbit-MQ</div><div class="progressbar progressbar--40"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">Scaled Agile</div><div class="progressbar progressbar--25"><div></div></div></div>
-					</div>
-				</div>
-				<div class="jobExperience">
-					<div class="content__block content__blockEvent translation-software-engineer"></div>
-					<div class="content__block content__blockEvent--timespanWrapper">
-						<div class="content__block content__blockEvent--timespan">
-							<span class="translation-from"></span> 02.2016 <span class="translation-to"></span>	06.2020
-						</div>
-					</div>
-					<div class="content__block content__blockLocation translation-at-arvato-ecommerce"></div>
-					<div class="content__block content__blockLocationAddress">Wohlenbergstr. 4d | 30179 Hannover</div>
-					<div class="content__block content__blockEmployerDescription">
-						<div class="content__blockEmployerDescription--text translation-arvato-ecommerce-description"></div>
-
-						<h3 class="translation-tasks"></h3>
-						<ul class="content__blockEmployerDescription--tasks translation-arvato-ecommerce-tasks"></ul>
-
-						<h3 class="translation-new-skills"></h3>
-						<div class="skill"><div class="skill__singleSkill">PHP 5.X - 7.X</div><div class="progressbar progressbar--90"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">Docker</div><div class="progressbar progressbar--60"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">NodeJS</div><div class="progressbar progressbar--25"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">React</div><div class="progressbar progressbar--15"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">Resilience</div><div class="progressbar progressbar--70"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">CI/CD</div><div class="progressbar progressbar--60"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">Bamboo</div><div class="progressbar progressbar--75"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">MVC</div><div class="progressbar progressbar--100"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">Clean-Architecture</div><div class="progressbar progressbar--75"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">.NET Framework</div><div class="progressbar progressbar--90"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">TDD</div><div class="progressbar progressbar--75"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill translation-rwd-layouts">RWD-Layouts</div><div class="progressbar progressbar--40"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">MSSQL</div><div class="progressbar progressbar--55"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">Windows Server</div><div class="progressbar progressbar--40"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">Agile Scrum</div><div class="progressbar progressbar--75"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">GIT / GIT-Flow</div><div class="progressbar progressbar--95"><div></div></div></div>
-					</div>
-				</div>
-				<div class="jobExperience">
-					<div class="content__block content__blockEvent translation-senior-software-engineer"></div>
-					<div class="content__block content__blockEvent--timespanWrapper">
-						<div class="content__block content__blockEvent--timespan">
-							<span class="translation-from"></span> 01.2015 <span class="translation-to"></span>	02.2016
-						</div>
-					</div>
-					<div class="content__block content__blockLocation translation-at-franke-bornberg"></div>
-					<div class="content__block content__blockLocationAddress">Prinzenstr. 16 | 30159 Hannover</div>
-					<div class="content__block content__blockEmployerDescription">
-						<div class="content__blockEmployerDescription--text translation-franke-bornberg-description"></div>
-
-						<h3 class="translation-tasks"></h3>
-						<ul class="content__blockEmployerDescription--tasks translation-franke-bornberg-tasks-sd"></ul>
-
-						<h3 class="translation-new-skills"></h3>
-						<div class="skill"><div class="skill__singleSkill">PHP 5.X</div><div class="progressbar progressbar--30"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">ASP.NET</div><div class="progressbar progressbar--55"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">TDD</div><div class="progressbar progressbar--5"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">.NET Framework</div><div class="progressbar progressbar--75"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">Windows Server</div><div class="progressbar progressbar--25"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">Agile Scrum</div><div class="progressbar progressbar--15"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">SVN</div><div class="progressbar progressbar--90"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">GIT</div><div class="progressbar progressbar--15"><div></div></div></div>
-					</div>
-				</div>
-				<div class="jobExperience">
-					<div class="content__block content__blockEvent translation-software-engineer"></div>
-					<div class="content__block content__blockEvent--timespanWrapper">
-						<div class="content__block content__blockEvent--timespan">
-							<span class="translation-from"></span> 03.2006 <span class="translation-to"></span>	01.2015
-						</div>
-					</div>
-					<div class="content__block content__blockLocation translation-at-franke-bornberg"></div>
-					<div class="content__block content__blockLocationAddress">Prinzenstr. 16 | 30159 Hannover</div>
-					<div class="content__block content__blockEmployerDescription">
-						<div class="content__blockEmployerDescription--text translation-franke-bornberg-description"></div>
-
-						<h3 class="translation-tasks"></h3>
-						<ul class="content__blockEmployerDescription--tasks translation-franke-bornberg-tasks"></ul>
-
-						<h3 class="translation-new-skills"></h3>
-						<div class="skill"><div class="skill__singleSkill">ASP.NET</div><div class="progressbar progressbar--25"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">.NET Framework</div><div class="progressbar progressbar--50"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">Windows Server</div><div class="progressbar progressbar--15"><div></div></div></div>
-						<div class="skill"><div class="skill__singleSkill">SVN</div><div class="progressbar progressbar--50"><div></div></div></div>
-					</div>
-				</div>
-
-				<div class="content__block content__blockTitle translation-education"></div>
-
-				<div class="education">
-					<div class="content__block content__blockEvent translation-graduation-from-high-school"></div>
-					<div class="content__block content__blockEvent--timespanWrapper">
-						<div class="content__block content__blockEvent--timespan">
-							<span class="translation-from"></span> 2010 <span class="translation-to"></span> 2012
-						</div>
-					</div>
-					<div class="content__block content__blockLocation translation-at-evening-high-school"></div>
-					<div class="content__block content__blockLocationAddress">Thurnithistraße 6 | 30519 Hannover</div>
-
-					<h3><span class="translation-grade"></span> 2,1</h3>
-				</div>
-				<div class="education">
-					<div class="content__block content__blockEvent translation-it-specialist-sd">Fachinformatiker / Anwendungsentwicklung</div>
-					<div class="content__block content__blockEvent--timespanWrapper">
-						<div class="content__block content__blockEvent--timespan">
-							<span class="translation-from"></span> 2003 <span class="translation-to"></span> 2006
-						</div>
-					</div>
-					<div class="content__block content__blockLocation">Easy-EDV GmbH</div>
-					<div class="content__block content__blockLocationAddress">Schneckenburgerstraße 22 | 30177 Hannover</div>
-				</div>
-			</div>
-			<div>&nbsp;</div>
-			<div>&nbsp;</div>
-			<div>&nbsp;</div>
 		</div>
 	</body>
 </html>
