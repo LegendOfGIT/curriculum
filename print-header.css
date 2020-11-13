@@ -121,6 +121,10 @@ html, body {
 	padding-top: initial;
 }
 
+.header__pdf {
+	display: none;
+}
+
 .header__profession {
 	font-size: 0.8em;
 	padding-bottom: 5px;

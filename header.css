@@ -104,7 +104,7 @@
 
 @media screen and (min-width: 568px) {
 	.header__block--additionalInformation {
-		left: 160px;
+		left: 145px;
 		position: absolute;
 		top: 15px;
 		width: unset;
@@ -190,6 +190,7 @@
 @media screen and (min-width: 568px) {
 	.header__container {
 		display: inherit;
+		font-size: 0.70em;
 		padding-bottom: 5px;
 		padding-top: inherit;
 	}
@@ -533,6 +534,39 @@
 		padding-left: 15px;
 		padding-top: 40px;
 	}
+}
+
+.header__pdf {
+	padding-left: 10px;
+	padding-top: 10px;
+	position: fixed;
+	width: 40px;
+}
+
+@media screen and (min-width: 568px) {
+	.header__pdf {
+		padding-top: 25px;
+		right: 175px;
+	}
+}
+
+@media screen and (min-width: 640px) {
+	.header__pdf {
+		padding-top: 30px;
+		right: 180px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.header__pdf {
+		padding-top: 13px;
+		position: absolute;
+		right: 10px;
+	}
+}
+
+.header__pdfImage {
+	width: 100%;
 }
 
 .header__profession {
