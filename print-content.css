@@ -1,0 +1,169 @@
+.content {
+	left: 350px;
+	position: relative;
+	text-align: initial;
+	top: 58px;
+	width: 450px;
+}
+
+.content__blockEvent {
+	font-size: 1.3em;
+}
+
+.content__blockEvent--timespan {
+	background-color: #FFF;
+	border: 1px solid #ccc;
+	box-shadow: 0 3px 6px -2px #b1b1b1;
+	font-size: 0.9em;
+	left: -140px;
+	padding: 5px;
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	width: 82px;
+	z-index: 3;
+}
+
+.content__blockEvent--timespanWrapper {
+	position: relative;
+}
+
+.content__blockJobExperiences--icon {
+	margin-right: unset;
+	padding-right: 5px;
+	width: 25px;
+}
+
+.content__blockLocation {
+	font-size: 0.8em;
+}
+
+.content__blockLocationAddress {
+	background: left;
+	background-image: url('images/place-icon.png');
+	background-repeat: no-repeat;
+	background-size: 16px;
+	display: initial;
+	font-size: 0.8em;
+	left: -20px;
+	padding-left: 20px;
+	position: relative;
+	top: 5px;
+}
+
+.content__blockTitle {
+	color: lightblue;
+	display: inline-block;
+	font-size: 1.5em;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.content__blockEmployerDescription {
+	display: inline-block;
+	font-size: 0.9em;
+	padding-top: 15px;
+	width: unset;
+}
+
+.content__blockEmployerDescription--tasks {
+	font-size: 0.9em;
+	padding-left: 16px;
+	text-align: initial;
+}
+
+.content__blockEmployerDescription--text {
+	width: 380px;
+}
+
+.education {
+	padding-bottom: 80px;
+	page-break-inside: avoid;
+}
+
+.jobExperience {
+	padding-bottom: 80px;
+	page-break-inside: avoid;
+}
+
+.progressbar {
+	background-color: #FFF;
+	border: 1px solid lightgray;
+	border-radius: 13px;
+	display: inline-block;
+	width: 10em;
+}
+
+.progressbar>div {
+	background-color: lightblue;
+	height: 0.5em;
+	border-radius: 10px;
+	width: 10em;
+}
+
+.progressbar--5>div {
+	width: 5%;
+}
+
+.progressbar--15>div {
+	width: 15%;
+}
+
+.progressbar--25>div {
+	width: 25%;
+}
+
+.progressbar--30>div {
+	width: 30%;
+}
+
+.progressbar--40>div {
+	width: 40%;
+}
+
+.progressbar--50>div {
+	width: 50%;
+}
+
+.progressbar--55>div {
+	width: 55%;
+}
+
+.progressbar--60>div {
+	width: 60%;
+}
+
+.progressbar--70>div {
+	background-color: lightgreen;
+	width: 70%;
+}
+
+.progressbar--75>div {
+	background-color: lightgreen;
+	width: 75%;
+}
+
+.progressbar--90>div {
+	background-color: lightgreen;
+	width: 90%;
+}
+
+.progressbar--95>div {
+	background-color: lightgreen;
+	width: 95%;
+}
+
+.progressbar--100>div {
+	background-color: lightgreen;
+	width: 100%;
+}
+
+.skill__singleSkill {
+	display: inline-block;
+	font-size: 0.8em;
+	padding-bottom: 8px;
+	padding-right: 10px;
+	padding-top: 5px;
+	text-align: initial;
+	width: 130px;
+}

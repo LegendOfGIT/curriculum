@@ -234,12 +234,6 @@
 	background-size: 15px;
 }
 
-@media screen and (min-width: 2560px) {
-	.header__container {
-		background-size: 25px;
-	}
-}
-
 .header__container--email {
 	background-image: url("images/email-icon.png");
 	background-position: left;

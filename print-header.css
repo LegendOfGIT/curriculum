@@ -1,0 +1,128 @@
+@page {
+	margin: 20px;
+}
+
+html, body {
+	-webkit-print-color-adjust: exact;
+	height: 297mm;
+	width: 210mm;
+}
+
+.content__lastUpdate {
+	display: none;
+}
+
+.header {
+	background-image: url("images/header-background.png");
+	background-size: 140px;
+	color: #FFF;
+	height: 100%;
+	position: fixed;
+	text-align: unset;
+	width: 270px;
+	z-index: 2;
+}
+
+.header__block {
+	display: inline-block;
+	padding-left: 40px;
+	padding-top: 55px;
+}
+
+.header__block--additionalInformation {
+	display: block;
+	left: 190px;
+	padding-left: 20px;
+	padding-top: 170px;
+	position: initial;
+	top: 15px;
+	width: unset;
+}
+
+.header__block--languages {
+	display: none;
+}
+
+.header__container {
+	background-repeat: no-repeat;
+	display: inherit;
+	font-size: 0.75em;
+	left: unset;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	padding-top: 10px;
+	text-align: unset;
+	width: unset;
+}
+
+.header__container--address {
+	background-image: url("images/home.png");
+	background-position: left;
+	background-size: 15px;
+}
+
+.header__container--email {
+	background-image: url("images/email-icon.png");
+	background-position: left;
+	background-size: 14px;
+}
+
+.header__container--email a {
+	color: #FFF;
+}
+
+.header__container--github {
+	background-image: url("images/github-icon.png");
+	background-position: left;
+	background-size: 13px;
+}
+
+.header__container--github a {
+	color: #FFF;
+}
+
+.header__container--title {
+	display: block;
+	font-size: 0.9em;
+	font-weight: bold;
+	padding-top: 20px;
+	text-transform: uppercase;
+}
+
+.header__firstName {
+	display: block;
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+.header__image {
+	background-color: white;
+	box-shadow: 0 3px 6px -2px #b1b1b1;
+	padding: 10px 10px 20px 10px;
+	width: 120px;
+}
+
+.header__imageContainer {
+	font-size: 0.9em;
+	left: 40px;
+	position: absolute;
+	top: 150px;
+	right: 15px;
+}
+
+.header__lastName {
+	display: block;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+.header__name {
+	padding-bottom: 5px;
+	padding-top: initial;
+}
+
+.header__profession {
+	font-size: 0.8em;
+	padding-bottom: 5px;
+	padding-left: unset;
+}
